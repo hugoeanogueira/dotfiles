@@ -1,0 +1,20 @@
+{
+  "name": "hugoeanogueira_dotfiles",
+  "version": "0.1.0",
+  "description": "hugoeanogueira's dotfiles",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugoeanogueira/dotfiles.git"
+  },
+  "contributors": [
+    "Hugo Nogueira <hugoeanogueira@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/hugoeanogueira/dotfiles/issues"
+  },
+  "homepage": "https://github.com/hugoeanogueira/dotfiles",
+  "private": false,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
