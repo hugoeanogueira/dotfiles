@@ -96,7 +96,3 @@ dist
 _tmp
 .sass-cache
 build
-
-# DO NOT LOAD SENSIBLE INFO
-*.extra
-_private/**
