@@ -21,11 +21,11 @@ shopt -s cdspell;
 [ -e "/Applications/MAMP/bin" ] && export PATH=/Applications/MAMP/bin:$PATH;
 
 # autoenv
-[ -e "/usr/local/opt/autoenv/activate.sh" ] && source "/usr/local/opt/autoenv/activate.sh"
+[ -e "/usr/local/opt/autoenv/activate.sh" ] && source "/usr/local/opt/autoenv/activate.sh";
 
 # Start NVM, NPM and NodeJS
 export NVM_DIR="$HOME/.nvm"
-[ -e "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+[ -e "$(brew --prefix nvm)/nvm.sh" ] && source "$(brew --prefix nvm)/nvm.sh";
 
 # PyEnv
 export PYENV_ROOT="$HOME/.pyenv"
