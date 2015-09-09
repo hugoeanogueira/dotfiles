@@ -7,12 +7,12 @@ from the scripts directory and each configuration folder.
 
 To install all in a new machine (without git):
 ```
-curl '' -o '' && tar -xzf '' && . '_scripts/install.sh';
+mkdir dotfiles; cd dotfiles; curl -L 'https://github.com/hugoeanogueira/dotfiles/tarball/master' | tar -xz --strip-components 1 && ./dotfiles/_scripts/install.sh
 ```
 
 To install only the dotfiles (without git)
 ```
-curl '' -o '' && tar -xzf '' && . '_scripts/install_1_dotfiles.sh';
+mkdir dotfiles; cd dotfiles; curl -L 'https://github.com/hugoeanogueira/dotfiles/tarball/master' | tar -xz --strip-components 1 && ./dotfiles/_scripts/install_1_dotfiles.sh
 ```
 
 ## What's inside ##
