@@ -109,10 +109,13 @@ install () {
         brew install nvm;
         mkdir "$HOME/.nvm";
         cp "$(brew --prefix nvm)/nvm-exec" "$HOME/.nvm";
+        [ -e "$(brew --prefix nvm)/nvm.sh" ] && source "$(brew --prefix nvm)/nvm.sh";
     else
         info "NVM already installed.";
     fi;
 
+    update_bash;
+    update_zshrc;
 
     if [[ $(has_node) != 1 ]];
     then
@@ -127,10 +130,6 @@ install () {
     else
         info "Node already installed.";
     fi;
-
-    update_bash;
-    update_zshrc;
-    source "$NVM_DIR/nvm.sh";
 
     # update npm to version 2.x and set log level to info
     info "Updating npm to latest version";
