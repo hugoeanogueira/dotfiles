@@ -56,7 +56,8 @@ update_bash () {
 # PyEnv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"' >> ~/.bash_profile;
+[ -e "$PYENV_ROOT/bin" ] && eval "$(pyenv init -)"
+' >> ~/.bash_profile;
 
     source "$HOME/.bash_profile";
     fi;
@@ -81,7 +82,8 @@ update_zshrc () {
 # PyEnv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"' >> ~/.zshrc;
+[ -e "$PYENV_ROOT/bin" ] && eval "$(pyenv init -)"
+' >> ~/.zshrc;
     fi;
 }
 

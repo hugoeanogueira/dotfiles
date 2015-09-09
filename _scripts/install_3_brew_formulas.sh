@@ -33,6 +33,7 @@ install () {
 
     # add repositories
     brew tap homebrew/fuse;
+    brew tap theory/sqitch;
     brew update;
 
     ## brew formulas ##
@@ -45,6 +46,7 @@ install () {
     brew install git-flow;
     brew install git-open;
     brew install htop-osx;
+    brew install md5sha1sum;
     brew install nmap;
     brew install openssl;
     brew install ossp-uuid;
@@ -56,7 +58,6 @@ install () {
     brew install tmux;
     brew install tree;
     brew install unrar;
-    brew tap theory/sqitch;
     brew install sqitch;
     brew install wifi-password;
     brew install wget;

@@ -47,13 +47,15 @@ info "
 ";
 
 # install all scripts
-# . "$DIR/install_1_dotfiles.sh";
-# . "$DIR/install_2_basics.sh";
-# . "$DIR/install_3_brew_formulas.sh";
-# . "$DIR/install_4_npm_packages.sh";
-# . "$DIR/install_5_gems.sh";
-# . "$DIR/install_6_apps.sh";
-# . "$DIR/install_7_sublime_packages.sh";
+. "$DIR/install_1_dotfiles.sh";
+. "$DIR/install_2_basics.sh";
+. "$DIR/install_3_brew_formulas.sh";
+. "$DIR/install_4_npm_packages.sh";
+. "$DIR/install_5_gems.sh";
+. "$DIR/install_6_apps.sh";
+. "$DIR/install_7_sublime_packages.sh";
+
+warn "Manually run the 'install_osx_configs.sh' script to customize your Mac OS!";
 
 success "
 +------------------------------------------------------------------+
@@ -61,7 +63,9 @@ success "
 |                                                                  |
 | Don't forget to:                                                 |
 | 1) Open Sublime Text 3 so it can install the missing packages;   |
-| 2) Install JDK and add it to jenv;                               |
-| 3) ... :p                                                        |
+| 2) Install the iterm theme;                                      |
+| 3) Run the 'install_osx_configs.sh' script to modify osx;        |
+| 4) Install JDK and add it to jenv;                               |
+| 5) ... :p                                                        |
 +------------------------------------------------------------------+
 ";

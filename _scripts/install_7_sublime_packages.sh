@@ -79,6 +79,7 @@ install_packages () {
         "Handlebars",
         "Markdown Preview",
         "Minify",
+        "nginx",
         "Objective-C Autocompletion",
         "Package Control",
         "Random Everything",
@@ -98,8 +99,7 @@ install_packages () {
         "SublimeLinter-pylint",
         "SublimeLinter-ruby",
         "SublimeLinter-shellcheck",
-        "Tag",
-        "nginx"
+        "Tag"
     ]
 }
 ' > "$config_file";

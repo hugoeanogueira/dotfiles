@@ -48,7 +48,7 @@ update_path_mamp () {
 
     if [[ -n "${text}" ]];
     then
-        echo 'export PATH=/Applications/MAMP/bin:$PATH;' >> "$HOME/.bash_profile";
+        echo '[ -e "/Applications/MAMP/bin" ] && export PATH=/Applications/MAMP/bin:$PATH;' >> "$HOME/.bash_profile";
     else
         info "MAMP already in PATH";
     fi;

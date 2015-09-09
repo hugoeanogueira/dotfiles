@@ -54,7 +54,8 @@ update_bash () {
 # JEnv
 export JENV_ROOT="$HOME/.jenv"
 export PATH="$JENV_ROOT/bin:$PATH"
-eval "$(jenv init -)"' >> ~/.bash_profile;
+[ -e "$JENV_ROOT/bin" ] && eval "$(jenv init -)"
+' >> ~/.bash_profile;
 
     source "$HOME/.bash_profile";
     fi;
@@ -79,7 +80,8 @@ update_zshrc () {
 # JEnv
 export JENV_ROOT="$HOME/.jenv"
 export PATH="$JENV_ROOT/bin:$PATH"
-eval "$(jenv init -)"' >> ~/.zshrc;
+[ -e "$JENV_ROOT/bin" ] && eval "$(jenv init -)"
+' >> ~/.zshrc;
     fi;
 }
 

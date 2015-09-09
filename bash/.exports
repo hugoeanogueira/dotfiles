@@ -1,0 +1,32 @@
+
+# Default editors
+export EDITOR='vim'
+export VISUAL='subl'
+export SVN_EDITOR=$VISUAL
+export GIT_EDITOR=$EDITOR
+
+# # Enable persistent REPL history for `node`.
+# NODE_REPL_HISTORY_FILE=~/.node_history;
+
+# # Allow 32³ entries; the default is 1000.
+# NODE_REPL_HISTORY_SIZE='32768';
+
+# # Increase Bash history size. Allow 32³ entries; the default is 500.
+# export HISTSIZE='32768';
+# export HISTFILESIZE="${HISTSIZE}";
+
+# Omit duplicates and commands that begin with a space from history.
+export HISTCONTROL='ignoreboth';
+
+# # Prefer PT Portuguese and use UTF-8.
+# export LANG='pt_PT.UTF-8@euro';
+# export LC_ALL='pt_PT.UTF-8@euro';
+
+# Highlight section titles in manual pages.
+export LESS_TERMCAP_md="${yellow}";
+
+# # Don’t clear the screen after quitting a manual page.
+# export MANPAGER='less -X';
+
+# Always enable colored `grep` output.
+export GREP_OPTIONS='--color=auto';

@@ -57,7 +57,8 @@ update_bash () {
 # RbEnv
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
-eval "$(rbenv init -)"' >> ~/.bash_profile;
+[ -e "$RBENV_ROOT/bin" ] && eval "$(rbenv init -)"
+' >> ~/.bash_profile;
 
     source "$HOME/.bash_profile";
     fi;
@@ -82,7 +83,8 @@ update_zshrc () {
 # RbEnv
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
-eval "$(rbenv init -)"' >> ~/.zshrc;
+[ -e "$RBENV_ROOT/bin" ] && eval "$(rbenv init -)"
+' >> ~/.zshrc;
     fi;
 }
 

@@ -48,7 +48,7 @@ has_node () {
 
 has_nvm_bash () {
     local text;
-    text="$(grep 'export NVM_DIR=$HOME/.nvm' $HOME/.bash_profile)";
+    text="$(grep 'export NVM_DIR="$HOME/.nvm"' $HOME/.bash_profile)";
 
     if [[ -n "${text}" ]];
     then
@@ -63,8 +63,9 @@ update_bash () {
     then
         echo '
 # Start NVM, NPM and NodeJS
-export NVM_DIR=$HOME/.nvm
-source $NVM_DIR/nvm.sh' >> ~/.bash_profile
+export NVM_DIR="$HOME/.nvm"
+[ -e "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+' >> ~/.bash_profile
 
     source "$HOME/.bash_profile"
     fi;
@@ -88,7 +89,8 @@ update_zshrc () {
         echo '
 # Start NVM, NPM and NodeJS
 export NVM_DIR="$HOME/.nvm"
-source "$NVM_DIR/nvm.sh"' >> ~/.zshrc
+[ -e "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+' >> ~/.zshrc
 
     source "$HOME/.zshrc"
     fi;
