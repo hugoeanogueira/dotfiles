@@ -76,9 +76,9 @@ install () {
     brew cask install handbrakecli;
     brew cask install ifunbox;
     brew cask install iterm2;
-    brew cask install keepassx;
     brew cask install imageoptim;
     brew cask install licecap;
+    brew cask install macpass;
     brew cask install mactracker;
     brew cask install mplayer-osx-extended;
     brew cask install mysqlworkbench;
