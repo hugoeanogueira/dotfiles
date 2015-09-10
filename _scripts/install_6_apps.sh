@@ -46,7 +46,7 @@ update_path_mamp () {
     local text;
     text="$(grep 'export PATH=/Applications/MAMP/bin:$PATH;' $HOME/.bash_profile)";
 
-    if [[ -n "${text}" ]];
+    if [[ ! -n "${text}" ]];
     then
         echo '[ -e "/Applications/MAMP/bin" ] && export PATH=/Applications/MAMP/bin:$PATH;' >> "$HOME/.bash_profile";
     else
