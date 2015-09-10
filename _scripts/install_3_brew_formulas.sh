@@ -56,6 +56,7 @@ install () {
     brew install speedtest_cli;
     brew install sshfs;
     brew install tmux;
+    brew install to;
     brew install tree;
     brew install unrar;
     brew install sqitch;

@@ -51,3 +51,4 @@ PATH="$PATH:$GOROOT/bin"
 
 # ADD EXTRA ALIASES
 if [ -f ~/.bash_profile.extra ]; then source ~/.bash_profile.extra; fi;
+source "/usr/local/opt/autoenv/activate.sh";
