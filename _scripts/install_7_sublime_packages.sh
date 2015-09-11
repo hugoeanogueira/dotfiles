@@ -75,6 +75,7 @@ install_packages () {
         "Gitignore",
         "HTML Snippets",
         "HTML Underscore Syntax",
+        "HTML-CSS-JS Prettify",
         "HTML5",
         "Handlebars",
         "Markdown Preview",
