@@ -80,7 +80,7 @@ install () {
     brew cask install licecap;
     brew cask install macpass;
     brew cask install mactracker;
-    brew cask search magicprefs;
+    brew cask install magicprefs;
     brew cask install mplayer-osx-extended;
     brew cask install mysqlworkbench;
     brew cask install openemu;
