@@ -35,53 +35,40 @@ has_jenv () {
     fi;
 }
 
-has_jenv_bash () {
+update_bash () {
     local text;
     text="$(grep 'export JENV_ROOT="$HOME/.jenv"' $HOME/.bash_profile)";
 
-    if [[ -n "${text}" ]];
+    if [[ "${text}" == "" ]];
     then
-        echo 1;
-        return 1;
-    fi;
-}
-
-update_bash () {
-
-    if [[ $(has_jenv_bash) != 1 ]];
-    then
+        info 'Sourcing jenv in .bash_profile';
         echo '
 # JEnv
 export JENV_ROOT="$HOME/.jenv"
 export PATH="$JENV_ROOT/bin:$PATH"
 [ -e "$JENV_ROOT/bin" ] && eval "$(jenv init -)"
 ' >> ~/.bash_profile;
-
-    source "$HOME/.bash_profile";
-    fi;
-}
-
-has_jenv_zshrc () {
-    local text;
-    text="$(grep 'export JENV_ROOT="$HOME/.jenv"' $HOME/.zshrc)";
-
-    if [[ -n "${text}" ]];
-    then
-        echo 1;
-        return 1;
+        source "$HOME/.bash_profile";
+    else
+        info 'JEnv already in .bash_profile';
     fi;
 }
 
 update_zshrc () {
+    local text;
+    text="$(grep 'export JENV_ROOT="$HOME/.jenv"' $HOME/.zshrc)";
 
-    if [[ $(has_jenv_bash) != 1 ]];
+    if [[ "${text}" == "" ]];
     then
+        info 'Sourcing jenv in .zshrc';
         echo '
 # JEnv
 export JENV_ROOT="$HOME/.jenv"
 export PATH="$JENV_ROOT/bin:$PATH"
 [ -e "$JENV_ROOT/bin" ] && eval "$(jenv init -)"
 ' >> ~/.zshrc;
+    else
+        info 'JEnv already in .bash_profile';
     fi;
 }
 
@@ -89,7 +76,7 @@ has_java_jdk () {
     local text;
     text="$(java -version | grep 'java version')";
 
-    if [[ -n "${text}" ]];
+    if [[ "${text}" == "" ]];
     then
         echo 1;
         return 1;

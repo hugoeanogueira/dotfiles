@@ -37,53 +37,40 @@ has_pyenv () {
     fi;
 }
 
-has_pyenv_bash () {
+update_bash () {
     local text;
     text="$(grep 'export PYENV_ROOT="$HOME/.pyenv"' $HOME/.bash_profile)";
 
-    if [[ -n "${text}" ]];
+    if [[ "${text}" == "" ]];
     then
-        echo 1;
-        return 1;
-    fi;
-}
-
-update_bash () {
-
-    if [[ $(has_pyenv_bash) != 1 ]];
-    then
+        info 'Sourcing pyenv in .bash_profile';
         echo '
 # PyEnv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 [ -e "$PYENV_ROOT/bin" ] && eval "$(pyenv init -)"
 ' >> ~/.bash_profile;
-
-    source "$HOME/.bash_profile";
-    fi;
-}
-
-has_pyenv_zshrc () {
-    local text;
-    text="$(grep 'export PYENV_ROOT="$HOME/.pyenv"' $HOME/.zshrc)";
-
-    if [[ -n "${text}" ]];
-    then
-        echo 1;
-        return 1;
+        source "$HOME/.bash_profile";
+    else
+        info 'PyEnv already in .bash_profile';
     fi;
 }
 
 update_zshrc () {
+    local text;
+    text="$(grep 'export PYENV_ROOT="$HOME/.pyenv"' $HOME/.zshrc)";
 
-    if [[ $(has_pyenv_bash) != 1 ]];
+    if [[ "${text}" == "" ]];
     then
+        info 'Sourcing pyenv in .zshrc';
         echo '
 # PyEnv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 [ -e "$PYENV_ROOT/bin" ] && eval "$(pyenv init -)"
 ' >> ~/.zshrc;
+    else
+        info 'PyEnv already in .zshrc';
     fi;
 }
 
@@ -91,7 +78,7 @@ has_python_v2 () {
     local text;
     text="$(pyenv versions | grep $PYTHON_V2)";
 
-    if [[ -n "${text}" ]];
+    if [[ "${text}" == "" ]];
     then
         echo 1;
         return 1;
@@ -114,7 +101,7 @@ has_python_v3 () {
     local text;
     text="$(pyenv versions | grep $PYTHON_V3)";
 
-    if [[ -n "${text}" ]];
+    if [[ "${text}" == "" ]];
     then
         echo 1;
         return 1;

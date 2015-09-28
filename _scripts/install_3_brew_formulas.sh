@@ -18,13 +18,35 @@ start () {
 
 update_path_autoenv () {
     local text;
-    text="$(grep 'source "/usr/local/opt/autoenv/activate.sh";' $HOME/.bash_profile)";
+    text="$(grep 'autoenv/activate.sh' $HOME/.bash_profile)";
 
-    if [[ -n "${text}" ]];
+    if [[ "${text}" == "" ]];
     then
-        echo 'source "/usr/local/opt/autoenv/activate.sh";' >> "$HOME/.bash_profile";
+        info 'Sourcing autoenv in .bash_profile';
+        echo '
+# autoenv
+[ -e "/usr/local/opt/autoenv/activate.sh" ] && source "/usr/local/opt/autoenv/activate.sh";
+' >> "$HOME/.bash_profile";
     else
         info "Autoenv already in PATH";
+    fi;
+}
+
+update_path_z () {
+    local text;
+    text="$(grep 'profile.d/z.sh' $HOME/.bash_profile)";
+
+    if [[ "${text}" == "" ]];
+    then
+        info 'Sourcing rupa/z in .bash_profile';
+        echo '
+# rupa/z
+if command -v brew >/dev/null 2>&1; then
+    [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+fi
+' >> "$HOME/.bash_profile";
+    else
+        info "Rupa/z already in PATH";
     fi;
 }
 
@@ -62,7 +84,6 @@ install () {
     brew install sqitch;
     brew install wifi-password;
     brew install wget;
-    brew install z;
 
     ## ansible roles ##
     ansible-galaxy install ANXS.build-essential --force;
@@ -72,6 +93,10 @@ install () {
     ## autoenv ##
     brew install autoenv;
     update_path_autoenv;
+
+    ## z ##
+    brew install z;
+    update_path_z;
 }
 
 start;

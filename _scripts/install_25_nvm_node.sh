@@ -46,53 +46,39 @@ has_node () {
     fi;
 }
 
-has_nvm_bash () {
-    local text;
-    text="$(grep 'export NVM_DIR="$HOME/.nvm"' $HOME/.bash_profile)";
-
-    if [[ -n "${text}" ]];
-    then
-        echo 1;
-        return 1;
-    fi;
-}
-
 update_bash () {
+    local text;
+    text="$(grep '/nvm.sh' $HOME/.bash_profile)";
 
-    if [[ $(has_nvm_bash) != 1 ]];
+    if [[ "${text}" == "" ]];
     then
+        info 'Sourcing nvm in .bash_profile';
         echo '
 # Start NVM, NPM and NodeJS
 export NVM_DIR="$HOME/.nvm"
 [ -e "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
-' >> ~/.bash_profile
-
-    source "$HOME/.bash_profile"
-    fi;
-}
-
-has_nvm_zshrc () {
-    local text;
-    text="$(grep 'export NVM_DIR="$HOME/.nvm"' $HOME/.zshrc)";
-
-    if [[ -n "${text}" ]];
-    then
-        echo 1;
-        return 1;
+' >> ~/.bash_profile;
+        source "$HOME/.bash_profile";
+    else
+        info 'Nvm already in .bash_profile';
     fi;
 }
 
 update_zshrc () {
+    local text;
+    text="$(grep '/nvm.sh' $HOME/.zshrc)";
 
-    if [[ $(has_nvm_bash) != 1 ]];
+    if [[ "${text}" == "" ]];
     then
+        info 'Sourcing nvm in .zshrc';
         echo '
 # Start NVM, NPM and NodeJS
 export NVM_DIR="$HOME/.nvm"
 [ -e "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
-' >> ~/.zshrc
-
-    source "$HOME/.zshrc"
+' >> ~/.zshrc;
+        source "$HOME/.zshrc";
+    else
+        info 'Nvm already in .zshrc';
     fi;
 }
 

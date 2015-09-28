@@ -34,64 +34,48 @@ has_go () {
     fi;
 }
 
-has_go_bash () {
+update_bash () {
     local text;
     text="$(grep 'export GOPATH="$HOME/Go"' $HOME/.bash_profile)";
 
-    if [[ -n "${text}" ]];
+    if [[ "${text}" == "" ]];
     then
-        echo 1;
-        return 1;
-    fi;
-}
-
-update_bash () {
-
-    if [[ $(has_go_bash) != 1 ]];
-    then
+        info 'Sourcing go in .bash_profile';
         echo '
 # Start Go
 export GOPATH="$HOME/Go"
 export GOROOT="/usr/local/opt/go/libexec"
 PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$GOROOT/bin"
-source "$GOPATH/go.sh"' >> ~/.bash_profile
-
-    source "$HOME/.bash_profile"
-    fi;
-}
-
-has_go_zshrc () {
-    local text;
-    text="$(grep 'export GOPATH="$HOME/Go"' $HOME/.zshrc)";
-
-    if [[ -n "${text}" ]];
-    then
-        echo 1;
-        return 1;
+' >> ~/.bash_profile
+        source "$HOME/.bash_profile"
+    else
+        info 'Go already in .bash_profile';
     fi;
 }
 
 update_zshrc () {
+    local text;
+    text="$(grep 'export GOPATH="$HOME/Go"' $HOME/.zshrc)";
 
-    if [[ $(has_go_bash) != 1 ]];
+    if [[ "${text}" == "" ]];
     then
+        info 'Sourcing go in .zshrc';
         echo '
 # Start Go
 export GOPATH="$HOME/Go"
 export GOROOT="/usr/local/opt/go/libexec"
 PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$GOROOT/bin"
-source "$GOPATH/go.sh"' >> ~/.zshrc
-
-    source "$HOME/.zshrc"
+' >> ~/.zshrc
+    else
+        info 'Go already in .zshrc';
     fi;
 }
 
 
 install () {
     echo "Installing...";
-
 
     if [[ $(has_go) != 1 ]];
     then

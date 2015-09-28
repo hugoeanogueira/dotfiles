@@ -38,53 +38,40 @@ has_rbenv () {
     fi;
 }
 
-has_rbenv_bash () {
+update_bash () {
     local text;
     text="$(grep 'export RBENV_ROOT="$HOME/.rbenv"' $HOME/.bash_profile)";
 
-    if [[ -n "${text}" ]];
+    if [[ "${text}" == "" ]];
     then
-        echo 1;
-        return 1;
-    fi;
-}
-
-update_bash () {
-
-    if [[ $(has_rbenv_bash) != 1 ]];
-    then
+        info 'Sourcing rbenv in .bash_profile';
         echo '
 # RbEnv
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
 [ -e "$RBENV_ROOT/bin" ] && eval "$(rbenv init -)"
 ' >> ~/.bash_profile;
-
-    source "$HOME/.bash_profile";
-    fi;
-}
-
-has_rbenv_zshrc () {
-    local text;
-    text="$(grep 'export RBENV_ROOT="$HOME/.rbenv"' $HOME/.zshrc)";
-
-    if [[ -n "${text}" ]];
-    then
-        echo 1;
-        return 1;
+        source "$HOME/.bash_profile";
+    else
+        info 'RbEnv already in .bash_profile';
     fi;
 }
 
 update_zshrc () {
+    local text;
+    text="$(grep 'export RBENV_ROOT="$HOME/.rbenv"' $HOME/.zshrc)";
 
-    if [[ $(has_rbenv_bash) != 1 ]];
+    if [[ "${text}" == "" ]];
     then
+        info 'Sourcing rbenv in .zshrc';
         echo '
 # RbEnv
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
 [ -e "$RBENV_ROOT/bin" ] && eval "$(rbenv init -)"
 ' >> ~/.zshrc;
+    else
+        info 'RbEnv already in .zshrc';
     fi;
 }
 
@@ -92,7 +79,7 @@ has_ruby_v2 () {
     local text;
     text="$(rbenv versions | grep $RUBY_V2)";
 
-    if [[ -n "${text}" ]];
+    if [[ "${text}" == "" ]];
     then
         echo 1;
         return 1;

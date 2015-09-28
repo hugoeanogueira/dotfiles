@@ -15,6 +15,9 @@ shopt -s cdspell;
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
+# ADD EXTRA ALIASES
+if [ -f ~/.bash_profile.extra ]; then source ~/.bash_profile.extra; fi;
+
 
 # -------- Added by install.sh -------- #
 
@@ -49,6 +52,7 @@ PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$GOROOT/bin"
 [ -e "$GOPATH/go.sh" ] && source "$GOPATH/go.sh"
 
-# ADD EXTRA ALIASES
-if [ -f ~/.bash_profile.extra ]; then source ~/.bash_profile.extra; fi;
-source "/usr/local/opt/autoenv/activate.sh";
+# rupa/z
+if command -v brew >/dev/null 2>&1; then
+    [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+fi
