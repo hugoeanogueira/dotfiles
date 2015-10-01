@@ -32,6 +32,7 @@ install () {
     npm install -g jsxhint
     npm install -g jsonlint
     npm install -g matches-selector
+    npm install -g node-appc
     npm install -g node-sass
     npm install -g nodemon
     npm install -g npm
