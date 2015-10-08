@@ -24,6 +24,7 @@ install () {
     npm install -g bower
     npm install -g csslint
     npm install -g gist
+    npm install -g gittio
     npm install -g grunt-cli
     npm install -g htmlhint
     npm install -g http-server
@@ -34,7 +35,6 @@ install () {
     npm install -g matches-selector
     npm install -g npm-check
     npm install -g npm-check-updates
-    npm install -g node-appc
     npm install -g node-sass
     npm install -g nodemon
     npm install -g npm
