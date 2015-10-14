@@ -85,6 +85,7 @@ install () {
     brew cask install mplayer-osx-extended;
     brew cask install mysqlworkbench;
     brew cask install openemu;
+    brew cask install opera;
     brew cask install sdformatter;
     brew cask install sequel-pro;
     brew cask install skype;
