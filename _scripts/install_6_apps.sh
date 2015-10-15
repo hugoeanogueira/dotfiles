@@ -96,6 +96,7 @@ install () {
     brew cask install transmission;
     brew cask install trash-it;
     brew cask install tvrenamer;
+    brew cask install valentina-studio;
     brew cask install virtualbox;
     brew cask install vagrant;
     brew cask install vlc;
