@@ -108,8 +108,8 @@ install () {
         # install node and npm
         info "Installing node and npm.";
         nvm install 0.12;       # install 0.10.38 if you have problems with 0.12.x
-        nvm use 0.12;
         nvm alias default 0.12; # install 0.10.38 if you have problems with 0.12.x
+        nvm use default;
 
         # update bash_profile
         touch ~/.bash_profile ~/.zshrc;
