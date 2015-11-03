@@ -73,6 +73,7 @@ install () {
     brew cask install firefox-nightly;
     brew cask install google-chrome;
     brew cask install google-chrome-canary;
+    brew cask install google-drive;
     brew cask install handbrake;
     brew cask install handbrakecli;
     brew cask install ifunbox;
@@ -94,6 +95,7 @@ install () {
     brew cask install spotify;
     brew cask install sublime-text3;
     brew cask install teamviewer;
+    brew cask install tunnelbear;
     brew cask install transmission;
     brew cask install trash-it;
     brew cask install tvrenamer;
