@@ -93,6 +93,7 @@ install () {
     brew cask install skype;
     brew cask install slack;
     brew cask install spotify;
+    brew cask install sourcetree;
     brew cask install sublime-text3;
     brew cask install teamviewer;
     brew cask install tunnelbear;
