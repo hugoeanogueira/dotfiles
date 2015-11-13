@@ -84,6 +84,7 @@ install_packages () {
         "Objective-C Autocompletion",
         "Package Control",
         "Random Everything",
+        "Razor",
         "SCSS",
         "Sass",
         "SideBarEnhancements",
@@ -100,7 +101,8 @@ install_packages () {
         "SublimeLinter-pylint",
         "SublimeLinter-ruby",
         "SublimeLinter-shellcheck",
-        "Tag"
+        "Tag",
+        "Vue Syntax Highlight"
     ]
 }
 ' > "$config_file";

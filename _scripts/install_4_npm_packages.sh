@@ -42,6 +42,7 @@ install () {
     npm install -g randomperson
     npm install -g serve
     npm install -g titanium
+    npm install -g webpack-dev-server
     npm install -g yo
 }
 

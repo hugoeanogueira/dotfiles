@@ -26,10 +26,6 @@ if [ -f ~/.bash_profile.extra ]; then source ~/.bash_profile.extra; fi;
 # autoenv
 [ -e "/usr/local/opt/autoenv/activate.sh" ] && source "/usr/local/opt/autoenv/activate.sh";
 
-# Start NVM, NPM and NodeJS
-export NVM_DIR="$HOME/.nvm"
-[ -e "$(brew --prefix nvm)/nvm.sh" ] && source "$(brew --prefix nvm)/nvm.sh";
-
 # PyEnv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -38,7 +34,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 # RbEnv
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
+export PATH="$RBENV_ROOT/shims:$PATH"
 [ -e "$RBENV_ROOT/bin" ] && eval "$(rbenv init -)"
+[ -e "$RBENV_ROOT/completions/rbenv.bash" ] && source "$RBENV_ROOT/completions/rbenv.bash";
 
 # JEnv
 export JENV_ROOT="$HOME/.jenv"
@@ -56,3 +54,9 @@ PATH="$PATH:$GOROOT/bin"
 if command -v brew >/dev/null 2>&1; then
     [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
+
+
+# Start NVM, NPM and NodeJS
+export NVM_DIR="$HOME/.nvm"
+[ -e "$(brew --prefix nvm)/nvm.sh" ] && source "$(brew --prefix nvm)/nvm.sh";
+
