@@ -72,6 +72,7 @@ install () {
     brew cask install filezilla;
     brew cask install firefox;
     brew cask install firefox-nightly;
+    brew cask install freac;
     brew cask install google-chrome;
     brew cask install google-chrome-canary;
     brew cask install google-drive;
@@ -86,6 +87,7 @@ install () {
     brew cask install magicprefs;
     brew cask install mplayer-osx-extended;
     brew cask install mysqlworkbench;
+    brew cask install namechanger;
     brew cask install openemu;
     brew cask install opera;
     brew cask install psequel;
