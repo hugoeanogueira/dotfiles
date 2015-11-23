@@ -19,9 +19,10 @@ install () {
     echo "Installing ruby gems...";
 
     ## ruby gems ##
-    gem install compass
-    gem install scss_lint
-    rbenv rehash
+    gem install compass;
+    gem install jekyll;
+    gem install scss_lint;
+    rbenv rehash;
 }
 
 start;
