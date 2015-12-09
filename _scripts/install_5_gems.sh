@@ -18,6 +18,9 @@ start () {
 install () {
     echo "Installing ruby gems...";
 
+    # IN EL CAPITAN USE:
+    # gem install -n /usr/local/bin scss_lint
+
     ## ruby gems ##
     gem install compass;
     gem install jekyll;
