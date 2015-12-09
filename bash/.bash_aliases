@@ -12,11 +12,10 @@ alias hosts='sudo $EDITOR /etc/hosts';
 alias flush="dscacheutil -flushcache"
 alias reload_bash="exec bash --login";
 
-alias install_node_10="nvm install 0.10 && nvm alias default 0.10 && nvm use default && exec bash --login";
-alias change_node_10="nvm alias default 4 && nvm use default && exec bash --login";
-
-alias install_node_4="nvm install 4 && nvm alias default 4 && nvm use default && exec bash --login && npm install -g npm@3";
-alias change_node_4="nvm alias default 0.10 && nvm use default && exec bash --login";
+alias nvm_install_10="nvm install 0.10 && nvm alias default 0.10 && nvm use default && exec bash --login";
+alias nvm_use_10="nvm alias default 4 && nvm use default && exec bash --login";
+alias nvm_install_4="nvm install 4 && nvm alias default 4 && nvm use default && exec bash --login && npm install -g npm@3";
+alias nvm_use_4="nvm alias default 0.10 && nvm use default && exec bash --login";
 
 # fun
 alias starwars="telnet towel.blinkenlights.nl"
