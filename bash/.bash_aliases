@@ -10,6 +10,7 @@ alias ips='ifconfig > /tmp/ip.txt && grep '\''inet '\'' /tmp/ip.txt';
 # alias l='ls -lahG';
 alias hosts='sudo $EDITOR /etc/hosts';
 alias flush="dscacheutil -flushcache"
+alias reload_bash="exec bash --login";
 
 # fun
 alias starwars="telnet towel.blinkenlights.nl"
