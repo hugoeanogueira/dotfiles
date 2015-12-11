@@ -1,1 +1,6 @@
-export PS1="\033[0;32m\h:\W\033[0m \033[0;36m\u\$\033[0m "
+
+# \h # hostname
+# \u # username
+# \W # folder
+
+export PS1="\[\033[0;32m\]\[\h:\W\033[0m\]\[\033[0;36m\] \u\$ \[\033[0m\]"
