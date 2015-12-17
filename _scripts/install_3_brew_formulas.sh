@@ -68,6 +68,7 @@ install () {
     brew install git-flow;
     brew install git-open;
     brew install htop-osx;
+    brew install httpie;
     brew install md5sha1sum;
     brew install nmap;
     brew install openssl;
