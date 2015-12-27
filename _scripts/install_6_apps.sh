@@ -68,6 +68,7 @@ install () {
     brew cask install caffeine;
     brew cask install cord;
     brew cask install diskmaker-x;
+    brew cask install diskwave;
     brew cask install dropbox;
     brew cask install filezilla;
     brew cask install firefox;
