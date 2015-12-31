@@ -11,6 +11,7 @@ alias ips='ifconfig > /tmp/ip.txt && grep '\''inet '\'' /tmp/ip.txt';
 alias hosts='sudo $EDITOR /etc/hosts';
 alias flush="dscacheutil -flushcache"
 alias reload_bash="exec bash --login";
+alias open_icons="open /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/";
 
 alias nvm_install_10="nvm install 0.10 && nvm alias default 0.10 && nvm use default && exec bash --login";
 alias nvm_use_10="nvm alias default 0.10 && nvm use default && exec bash --login";
