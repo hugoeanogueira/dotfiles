@@ -9,7 +9,7 @@ alias ip='dig +short myip.opendns.com @resolver1.opendns.com';
 alias ips='ifconfig > /tmp/ip.txt && grep '\''inet '\'' /tmp/ip.txt';
 # alias l='ls -lahG';
 alias hosts='sudo $EDITOR /etc/hosts';
-alias flush="dscacheutil -flushcache"
+alias flush="sudo killall -HUP mDNSResponder"
 alias reload_bash="exec bash --login";
 alias open_icons="open /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/";
 
