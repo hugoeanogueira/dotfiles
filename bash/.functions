@@ -239,3 +239,22 @@ function getcertnames() {
 function tre() {
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# use vegeta attack
+# @param url
+# @param duration (secconds)
+function vegetaa() {
+
+    local url="$1";
+    local duration="$2";
+
+    if [ -z "${url}" ]; then
+        url='http://localhost';
+    fi;
+
+    if [ -z "${duration}" ]; then
+        duration='5';
+    fi;
+
+    echo "GET $url" | vegeta attack -duration="${duration}s" | tee /tmp/results.bin | vegeta report
+}

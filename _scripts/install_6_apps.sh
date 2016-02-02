@@ -64,7 +64,6 @@ install () {
     brew update;
 
     brew cask install appcleaner;
-    brew cask install bettertouchtool;
     brew cask install caffeine;
     brew cask install cord;
     brew cask install diskmaker-x;
