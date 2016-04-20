@@ -59,15 +59,18 @@ install () {
     echo "Installing applications...";
 
     # install brew-cask and update formulas
-    brew install caskroom/cask/brew-cask;
+    # brew install caskroom/cask/brew-cask; # deprecated (now bundled with brew)
     brew tap caskroom/versions;
     brew update;
 
     brew cask install appcleaner;
+    brew cask install atom;
     brew cask install caffeine;
+    brew cask install charles;
     brew cask install cord;
     brew cask install diskmaker-x;
     brew cask install diskwave;
+    brew cask install dockertoolbox;
     brew cask install dropbox;
     brew cask install filezilla;
     brew cask install firefox;
@@ -75,7 +78,7 @@ install () {
     brew cask install freac;
     brew cask install google-chrome;
     brew cask install google-chrome-canary;
-    brew cask install google-drive;
+    # brew cask install google-drive;
     brew cask install handbrake;
     brew cask install handbrakecli;
     brew cask install ifunbox;
@@ -84,8 +87,8 @@ install () {
     brew cask install licecap;
     brew cask install macpass;
     brew cask install mactracker;
-    brew cask install magicprefs;
-    brew cask install mplayer-osx-extended;
+    # brew cask install magicprefs;
+    # brew cask install mplayer-osx-extended;
     brew cask install mysqlworkbench;
     brew cask install namechanger;
     brew cask install openemu;
@@ -96,7 +99,7 @@ install () {
     brew cask install skype;
     brew cask install slack;
     brew cask install spotify;
-    brew cask install sourcetree;
+    # brew cask install sourcetree;
     brew cask install sublime-text3;
     brew cask install teamviewer;
     brew cask install tunnelbear;
@@ -109,9 +112,8 @@ install () {
     brew cask install vlc;
 
     # requiring password
-    brew cask install owncloud;
-    brew cask install mamp;
-    update_path_mamp;
+    # brew cask install mamp;
+    # update_path_mamp;
 
     ## GPG
     ## https://gpgtoolsols.org/
