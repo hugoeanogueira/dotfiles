@@ -21,16 +21,20 @@ install () {
 
     ## npm packages ##
     npm install -g bower;
+    npm install -g clean-css;
     npm install -g csslint;
     npm install -g gist;
     npm install -g grunt-cli;
     npm install -g htmlhint;
+    npm install -g html-minifier;
     npm install -g http-server;
     npm install -g jshint;
     npm install -g jslint;
     npm install -g jsxhint;
     npm install -g jsonlint;
+    npm install -g js-beautify;
     npm install -g matches-selector;
+    npm install -g minjson;
     npm install -g npm-check;
     npm install -g npm-check-updates;
     npm install -g node-sass;
@@ -38,9 +42,11 @@ install () {
     npm install -g pm2;
     npm install -g randomperson;
     npm install -g serve;
+    npm install -g svgo;
+    npm install -g uglify-js;
+    npm install -g uglifycss;
     npm install -g webpack-dev-server;
     npm install -g yo;
-
 }
 
 start;

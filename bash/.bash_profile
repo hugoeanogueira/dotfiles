@@ -55,8 +55,6 @@ if command -v brew >/dev/null 2>&1; then
     [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
-
 # Start NVM, NPM and NodeJS
 export NVM_DIR="$HOME/.nvm"
 [ -e "$(brew --prefix nvm)/nvm.sh" ] && source "$(brew --prefix nvm)/nvm.sh";
-
