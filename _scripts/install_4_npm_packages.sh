@@ -19,12 +19,16 @@ start () {
 install () {
     echo "Installing npm packages...";
 
+    ## make sure npm is at version 3 ##
+    npm install -g npm@3;
+
     ## npm packages ##
     npm install -g bower;
     npm install -g clean-css;
     npm install -g csslint;
     npm install -g eslint;
     npm install -g gist;
+    npm install -g gulp-cli;
     npm install -g grunt-cli;
     npm install -g htmlhint;
     npm install -g html-minifier;
@@ -40,6 +44,7 @@ install () {
     npm install -g npm-check-updates;
     npm install -g node-sass;
     npm install -g nodemon;
+    npm install -g karma;
     npm install -g pm2;
     npm install -g randomperson;
     npm install -g serve;
