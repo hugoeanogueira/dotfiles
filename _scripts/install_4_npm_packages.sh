@@ -23,13 +23,14 @@ install () {
     npm install -g bower;
     npm install -g clean-css;
     npm install -g csslint;
+    npm install -g eslint;
     npm install -g gist;
     npm install -g grunt-cli;
     npm install -g htmlhint;
     npm install -g html-minifier;
     npm install -g http-server;
-    npm install -g jshint;
-    npm install -g jslint;
+    # npm install -g jshint;
+    # npm install -g jslint;
     npm install -g jsxhint;
     npm install -g jsonlint;
     npm install -g js-beautify;

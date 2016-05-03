@@ -74,7 +74,7 @@ install () {
     brew cask install dropbox;
     brew cask install filezilla;
     brew cask install firefox;
-    brew cask install firefox-nightly;
+    brew cask install firefoxnightly;
     brew cask install freac;
     brew cask install google-chrome;
     brew cask install google-chrome-canary;
