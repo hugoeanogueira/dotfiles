@@ -51,6 +51,7 @@ install () {
     npm install -g svgo;
     npm install -g uglify-js;
     npm install -g uglifycss;
+    npm install -g up;
     npm install -g webpack-dev-server;
     npm install -g yo;
 }
