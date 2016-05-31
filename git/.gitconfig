@@ -80,6 +80,9 @@
     # List contributors with number of commits
     contributors = shortlog --summary --numbered
 
+    # Pull recursive project and submodules
+    check-sub = "!f() { git checkout $1 && git pull && git submodule update --init --recursive; }; f"
+
 [core]
 
     # Use custom `.gitignore` and `.gitattributes`
