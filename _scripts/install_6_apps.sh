@@ -63,6 +63,7 @@ install () {
     brew tap caskroom/versions;
     brew update;
 
+    brew cask install 4k-video-downloader
     brew cask install appcleaner;
     brew cask install atom;
     brew cask install caffeine;
