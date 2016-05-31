@@ -59,5 +59,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -e "$(brew --prefix nvm)/nvm.sh" ] && source "$(brew --prefix nvm)/nvm.sh";
 
-# nvbn/thefuck
-eval "$(thefuck --alias)"
+# # nvbn/thefuck
+# eval "$(thefuck --alias)"
+
