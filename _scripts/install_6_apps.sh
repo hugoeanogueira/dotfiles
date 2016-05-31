@@ -67,6 +67,7 @@ install () {
     brew cask install atom;
     brew cask install caffeine;
     brew cask install charles;
+    brew cask install cloudup;
     brew cask install cord;
     brew cask install diskmaker-x;
     brew cask install diskwave;
