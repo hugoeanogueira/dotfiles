@@ -12,7 +12,7 @@ function f() {
 
 
 # Copy w/ progress
-cp_p () {
+function cp_p() {
   rsync -WavP --human-readable --progress $1 $2
 }
 
@@ -257,4 +257,9 @@ function vegetaa() {
     fi;
 
     echo "GET $url" | vegeta attack -duration="${duration}s" | tee /tmp/results.bin | vegeta report
+}
+
+# check RSA key figerprint
+function rsa_fingerprint() {
+  ssh-keygen -E md5 -lf "$1";
 }
