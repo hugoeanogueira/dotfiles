@@ -16,44 +16,18 @@ start () {
     success "Done!";
 }
 
-symlink_sublime () {
+# update_path_mamp () {
+#     local text;
+#     text="$(grep 'export PATH=/Applications/MAMP/bin:$PATH;' $HOME/.bash_profile)";
 
-    local subl;
-    local test_path;
-
-    # 1) "/Applications/Sublime Text"
-    test_path="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl";
-    if [[ -e "${test_path}" ]];
-    then
-        subl="$test_path";
-    fi;
-
-    # 2) "/Applications/Sublime Text"
-    test_path="$HOME/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl";
-    if [[ -e "${test_path}" ]];
-    then
-        subl="$test_path";
-    fi;
-
-    # make the symlink
-    if [[ -n "${subl}" && -e "${subl}" ]];
-    then
-        ln -s "$subl" "/usr/local/bin/subl"
-    fi;
-}
-
-update_path_mamp () {
-    local text;
-    text="$(grep 'export PATH=/Applications/MAMP/bin:$PATH;' $HOME/.bash_profile)";
-
-    if [[ "${text}" == "" ]];
-    then
-        info 'Adding MAMP tp path in .bash_profile';
-        echo '[ -e "/Applications/MAMP/bin" ] && export PATH=/Applications/MAMP/bin:$PATH;' >> "$HOME/.bash_profile";
-    else
-        info "MAMP already in PATH";
-    fi;
-}
+#     if [[ "${text}" == "" ]];
+#     then
+#         info 'Adding MAMP tp path in .bash_profile';
+#         echo '[ -e "/Applications/MAMP/bin" ] && export PATH=/Applications/MAMP/bin:$PATH;' >> "$HOME/.bash_profile";
+#     else
+#         info "MAMP already in PATH";
+#     fi;
+# }
 
 install () {
     echo "Installing applications...";
@@ -68,6 +42,7 @@ install () {
     brew cask install atom;
     brew cask install caffeine;
     brew cask install charles;
+    brew cask install chefdk
     brew cask install cloudup;
     brew cask install cord;
     brew cask install diskmaker-x;
@@ -114,6 +89,10 @@ install () {
     brew cask install vagrant;
     brew cask install vlc;
 
+    vagrant plugin install vagrant-berkshelf;
+    vagrant plugin install vagrant-cachier;
+    vagrant plugin install vagrant-omnibu;
+
     # requiring password
     # brew cask install mamp;
     # update_path_mamp;
@@ -122,8 +101,6 @@ install () {
     ## https://gpgtoolsols.org/
     brew cask install gpgtools;
     npm install -g keybase-installer;
-
-    symlink_sublime;
 }
 
 
