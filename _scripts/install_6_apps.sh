@@ -91,7 +91,7 @@ install () {
 
     vagrant plugin install vagrant-berkshelf;
     vagrant plugin install vagrant-cachier;
-    vagrant plugin install vagrant-omnibu;
+    vagrant plugin install vagrant-omnibus;
 
     # requiring password
     # brew cask install mamp;
