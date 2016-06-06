@@ -65,7 +65,7 @@ install () {
     brew install autoconf;
     brew install gist;
     brew install git-crypt;
-    brew install git-flow;
+    brew install git-flow-avh;
     brew install git-open;
     brew install htop-osx;
     brew install httpie;
