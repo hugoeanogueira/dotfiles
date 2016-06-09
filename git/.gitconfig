@@ -20,6 +20,9 @@
 
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
+    # Reset and pull
+    rp = !git reset HEAD --hard && git pull
+
     # Pull changes using rebase
     up = pull --rebase --prune
 
@@ -43,6 +46,9 @@
 
     # Commit all changes
     ca = !git add -A && git commit -av
+
+    # Commit all changes
+    ca = !git add -A && git commit -av && git push
 
     # Switch to a branch, creating it if necessary
     go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
