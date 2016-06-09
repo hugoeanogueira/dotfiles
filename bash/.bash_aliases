@@ -7,6 +7,7 @@ alias countf='ls | wc -l';
 alias gi='gist -c -p -P -s -t js';
 alias gs='git status';
 alias gb='git branch';
+alias grp='git rp';
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com';
 alias ips='ifconfig > /tmp/ip.txt && grep '\''inet '\'' /tmp/ip.txt';
 # alias l='ls -lahG';
