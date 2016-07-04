@@ -96,7 +96,7 @@ install_packages () {
         "SublimeLinter-contrib-java",
         "SublimeLinter-contrib-scss-lint",
         "SublimeLinter-csslint",
-        "SublimeLinter-jshint",
+        "SublimeLinter-eslint",
         "SublimeLinter-json",
         "SublimeLinter-jsxhint",
         "SublimeLinter-php",
