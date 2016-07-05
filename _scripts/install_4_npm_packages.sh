@@ -27,14 +27,16 @@ install () {
     npm install -g clean-css;
     npm install -g csslint;
     npm install -g eslint;
+    npm install -g eslint-config-airbnb;
+    npm install -g eslint-config-angular;
+    npm install -g eslint-plugin-angular;
+    npm install -g eslint-plugin-import;
     npm install -g gist;
     npm install -g gulp-cli;
     npm install -g grunt-cli;
     npm install -g htmlhint;
     npm install -g html-minifier;
     npm install -g http-server;
-    # npm install -g jshint;
-    # npm install -g jslint;
     npm install -g jsxhint;
     npm install -g jsonlint;
     npm install -g js-beautify;
