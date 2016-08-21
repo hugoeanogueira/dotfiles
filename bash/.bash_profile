@@ -62,3 +62,6 @@ export NVM_DIR="$HOME/.nvm"
 # # nvbn/thefuck
 # eval "$(thefuck --alias)"
 
+# iTerm 2 shell integration (must run the install script)
+# https://www.iterm2.com/documentation-shell-integration.html
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
