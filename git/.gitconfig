@@ -89,6 +89,9 @@
     # Pull recursive project and submodules
     check-sub = "!f() { git checkout $1 && git pull && git submodule update --init --recursive; }; f"
 
+    # Pull recursive project and submodules
+    pull-all = "!git checkout master && git pull && git checkout develop && git pull && git pull --tags && git pull --prune"
+
 [core]
 
     # Use custom `.gitignore` and `.gitattributes`
