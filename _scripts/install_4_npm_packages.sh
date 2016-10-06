@@ -37,6 +37,7 @@ install () {
     npm install -g htmlhint;
     npm install -g html-minifier;
     npm install -g http-server;
+    npm install -g loadtest;
     npm install -g jsxhint;
     npm install -g jsonlint;
     npm install -g js-beautify;
