@@ -84,6 +84,7 @@ install_packages () {
         "HTML Underscore Syntax",
         "HTML-CSS-JS Prettify",
         "HTML5",
+        "Insert Nums",
         "Markdown Preview",
         "Minify",
         "nginx",
