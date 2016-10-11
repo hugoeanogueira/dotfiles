@@ -47,7 +47,7 @@ install () {
     brew cask install cord;
     brew cask install diskmaker-x;
     brew cask install diskwave;
-    brew cask install dockertoolbox;
+    brew cask install docker;
     brew cask install dropbox;
     brew cask install filezilla;
     brew cask install firefox;
