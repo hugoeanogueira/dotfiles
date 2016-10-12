@@ -73,6 +73,7 @@ install_packages () {
         "CSS3",
         "Diffy",
         "DocBlockr",
+        "Dockerfile Syntax Highlighting",
         "EditorConfig",
         "FuzzyFilePath",
         "Git Config",
