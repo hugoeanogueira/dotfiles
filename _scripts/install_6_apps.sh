@@ -55,7 +55,7 @@ install () {
     brew cask install freac;
     brew cask install google-chrome;
     brew cask install google-chrome-canary;
-    # brew cask install google-drive;
+    brew cask install google-cloud-sdk;
     brew cask install handbrake;
     brew cask install handbrakecli;
     brew cask install ifunbox;
