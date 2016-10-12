@@ -22,13 +22,12 @@ alias nvm_install_4="nvm install 4 && nvm alias default 4 && nvm use default && 
 alias nvm_use_4="nvm alias default 4 && nvm use default && exec bash --login";
 
 # fun
-alias starwars="telnet towel.blinkenlights.nl"
+alias starwars="telnet towel.blinkenlights.nl";
 
-# titanium
-alias tbuild='titanium build --platform iphone --log-level info --retina --tall';
-alias tbuild4='titanium build --platform iphone --log-level info --retina';
-alias tbuildonly='titanium build -b -p ios --log-level info';
-alias tdist='grunt device && titanium build --platform iphone --log-level info --target dist-adhoc';
+# docker
+alias docker_ps='docker ps -a';
+alias docker_stop='docker ps -aq | xargs docker stop';
+alias docker_rm='docker ps -aq | xargs docker rm';
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -64,7 +63,6 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Merge PDF files
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
-
 
 # ADD EXTRA ALIASES
 if [ -f ~/.bash_aliases.extra ]; then source ~/.bash_aliases.extra; fi;
