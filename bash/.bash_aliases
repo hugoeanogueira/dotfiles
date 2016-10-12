@@ -25,9 +25,9 @@ alias nvm_use_4="nvm alias default 4 && nvm use default && exec bash --login";
 alias starwars="telnet towel.blinkenlights.nl";
 
 # docker
-alias docker_ps='docker ps -a';
-alias docker_stop='docker ps -aq | xargs docker stop';
-alias docker_rm='docker ps -aq | xargs docker rm';
+alias dkkps='docker ps -a';
+alias dkstop='docker ps -aq | xargs docker stop';
+alias dkrm='docker ps -aq | xargs docker rm';
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
