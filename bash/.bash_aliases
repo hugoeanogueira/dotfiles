@@ -25,7 +25,7 @@ alias nvm_use_4="nvm alias default 4 && nvm use default && exec bash --login";
 alias starwars="telnet towel.blinkenlights.nl";
 
 # docker
-alias dkkps='docker ps -a';
+alias dkps='docker ps -a';
 alias dkstop='docker ps -aq | xargs docker stop';
 alias dkrm='docker ps -aq | xargs docker rm';
 
