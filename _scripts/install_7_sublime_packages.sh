@@ -89,6 +89,7 @@ install_packages () {
         "Markdown Preview",
         "Minify",
         "nginx",
+        "Less",
         "Objective-C Autocompletion",
         "Package Control",
         "Pretty JSON",
