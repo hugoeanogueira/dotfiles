@@ -109,6 +109,7 @@ install_packages () {
         "SublimeLinter-json",
         "SublimeLinter-jsxhint",
         "SublimeLinter-php",
+        "SublimeLinter-pyyaml",
         "SublimeLinter-pylint",
         "SublimeLinter-ruby",
         "SublimeLinter-shellcheck",
