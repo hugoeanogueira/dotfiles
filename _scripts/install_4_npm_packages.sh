@@ -19,8 +19,8 @@ start () {
 install () {
     echo "Installing npm packages...";
 
-    ## make sure npm is at version 3 ##
-    npm install -g npm@3;
+    ## make sure npm is at version 4 ##
+    npm install -g npm@4;
 
     ## npm packages ##
     npm install -g bower;
