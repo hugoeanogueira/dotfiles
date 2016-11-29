@@ -16,19 +16,6 @@ start () {
     success "Done!";
 }
 
-# update_path_mamp () {
-#     local text;
-#     text="$(grep 'export PATH=/Applications/MAMP/bin:$PATH;' $HOME/.bash_profile)";
-
-#     if [[ "${text}" == "" ]];
-#     then
-#         info 'Adding MAMP tp path in .bash_profile';
-#         echo '[ -e "/Applications/MAMP/bin" ] && export PATH=/Applications/MAMP/bin:$PATH;' >> "$HOME/.bash_profile";
-#     else
-#         info "MAMP already in PATH";
-#     fi;
-# }
-
 install () {
     echo "Installing applications...";
 
@@ -60,24 +47,21 @@ install () {
     brew cask install handbrakecli;
     brew cask install ifunbox;
     brew cask install iterm2;
-    # brew cask install kitematic;
     brew cask install imageoptim;
     brew cask install licecap;
     brew cask install macpass;
     brew cask install mactracker;
-    # brew cask install magicprefs;
-    # brew cask install mplayer-osx-extended;
     brew cask install mysqlworkbench;
     brew cask install namechanger;
     brew cask install openemu;
     brew cask install opera;
+    brew cask install oversight;
     brew cask install psequel;
     brew cask install sdformatter;
     brew cask install sequel-pro;
     brew cask install skype;
     brew cask install slack;
     brew cask install spotify;
-    # brew cask install sourcetree;
     brew cask install sublime-text3;
     brew cask install teamviewer;
     brew cask install tunnelbear;
@@ -92,10 +76,6 @@ install () {
     vagrant plugin install vagrant-berkshelf;
     vagrant plugin install vagrant-cachier;
     vagrant plugin install vagrant-omnibus;
-
-    # requiring password
-    # brew cask install mamp;
-    # update_path_mamp;
 
     ## GPG
     ## https://gpgtoolsols.org/
