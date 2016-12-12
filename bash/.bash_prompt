@@ -1,6 +1,7 @@
 
-# \h # hostname
-# \u # username
-# \W # folder
+#
+# EXAMPLE
+# imac:bash hugonogueira$ run_my_command_here
+#
 
-export PS1="\[\033[0;32m\]\[\h:\W\033[0m\]\[\033[0;36m\] \u\$ \[\033[0m\]"
+export PS1="\[\033[0;32m\]\h:\W\[$(tput sgr0)\]\[\033[0;36m\] \[$(tput sgr0)\]\[\033[0;36m\]\u\\$\[$(tput sgr0)\]\[\033[0;36m\] \[$(tput sgr0)\]"
