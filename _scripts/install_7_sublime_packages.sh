@@ -75,6 +75,7 @@ install_packages () {
         "DocBlockr",
         "Dockerfile Syntax Highlighting",
         "EditorConfig",
+        "FileDiffs",
         "FuzzyFilePath",
         "Git Config",
         "Git Conflict Resolver",
