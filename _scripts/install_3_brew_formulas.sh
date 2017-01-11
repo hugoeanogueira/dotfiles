@@ -116,7 +116,9 @@ install () {
     ## bash completion ##
     brew install bash-completion;
     update_path_bash_completion;
+
     brew tap homebrew/completions;
+    brew install homebrew/completions/maven-completion;
 
     ## z ##
     brew install z;
