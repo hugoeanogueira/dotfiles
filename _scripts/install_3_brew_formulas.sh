@@ -32,6 +32,23 @@ update_path_autoenv () {
     fi;
 }
 
+update_path_bash_completion () {
+    local text;
+    text="$(grep 'etc/bash_completion' $HOME/.bash_profile)";
+
+    if [[ "${text}" == "" ]];
+    then
+        info 'Sourcing autoenv in .bash_profile';
+        echo '
+# bash auto completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi' >> "$HOME/.bash_profile";
+    else
+        info "Bash completion already in PATH";
+    fi;
+}
+
 update_path_z () {
     local text;
     text="$(grep 'profile.d/z.sh' $HOME/.bash_profile)";
@@ -95,6 +112,11 @@ install () {
     ## autoenv ##
     brew install autoenv;
     update_path_autoenv;
+
+    ## bash completion ##
+    brew install bash-completion;
+    update_path_bash_completion;
+    brew tap homebrew/completions;
 
     ## z ##
     brew install z;

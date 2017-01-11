@@ -65,3 +65,8 @@ export NVM_DIR="$HOME/.nvm"
 # iTerm 2 shell integration (must run the install script)
 # https://www.iterm2.com/documentation-shell-integration.html
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# bash auto completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
