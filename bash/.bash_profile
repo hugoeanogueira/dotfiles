@@ -68,5 +68,13 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 # bash auto completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
+source $(brew --prefix)/etc/bash_completion > /dev/null
+fi
+
+if [ -f "$HOME/.git_completion.bash" ]; then
+source "$HOME/.git_completion.bash" > /dev/null
+fi
+
+if [ -f "$HOME/.maven_completion.bash" ]; then
+source "$HOME/.maven_completion.bash" > /dev/null
 fi

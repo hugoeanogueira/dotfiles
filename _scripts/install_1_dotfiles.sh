@@ -43,6 +43,10 @@ install () {
     ln -s "$PARENT_DIR/bash/.functions" "$HOME/.functions";
     ln -s "$PARENT_DIR/bash/.inputrc" "$HOME/.inputrc";
 
+    # bash completions
+    ln -s "$PARENT_DIR/bash/completions/.git_completion.bash" "$HOME/.git_completion.bash";
+    ln -s "$PARENT_DIR/bash/completions/.maven_completion.bash" "$HOME/.maven_completion.bash";
+
     # git
     ln -s "$PARENT_DIR/git/.gitconfig" "$HOME/.gitconfig";
     ln -s "$PARENT_DIR/git/.gitignore" "$HOME/.gitignore";
