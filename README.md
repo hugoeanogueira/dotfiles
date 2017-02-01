@@ -30,23 +30,10 @@ mkdir dotfiles; cd dotfiles; curl -L 'https://github.com/hugoeanogueira/dotfiles
 │   │   ├── .gitconfig
 │   │   └── .gitignore
 │   ├── iterm
-│   │   └── spacedust_custom.itermcolors
 │   ├── osx
-│   │   └── .osx
 │   ├── sublime
-│   │   ├── .editorconfig
-│   │   ├── .jscsrc
-│   │   ├── .jshintrc
-│   │   └── .scss-lint.yml
 │   ├── tmux
-│   │   └── .tmux.conf
 │   └── vim
-│       ├── .vimrc
-│       ├── backups
-│       ├── plugins
-│       ├── snippets
-│       ├── swaps
-│       └── undos
 |
 ├── 2) basics
 │   ├── 1 Command Line Tools
@@ -60,132 +47,10 @@ mkdir dotfiles; cd dotfiles; curl -L 'https://github.com/hugoeanogueira/dotfiles
 │   └── 9 Go
 |
 ├── 3) brew formulas
-│   ├── ack
-│   ├── ansible
-│   ├── apg
-│   ├── autoenv
-│   ├── autoconf
-│   ├── gist
-│   ├── git-crypt
-│   ├── git-flow
-│   ├── git-open
-│   ├── htop-osx
-│   ├── md5sha1sum
-│   ├── nmap
-│   ├── openssl
-│   ├── ossp-uuid
-│   ├── phantomjs
-│   ├── postgresql
-│   ├── shellcheck
-│   ├── speedtest_cli
-│   ├── sshfs
-│   ├── tmux
-│   ├── tree
-│   ├── unrar
-│   ├── sqitch
-│   ├── wifi-password
-│   ├── wget
-│   └── z
-|
 ├── 4) npm global packages
-│   ├── alloy
-│   ├── bower
-│   ├── csslint
-│   ├── gist
-│   ├── grunt-cli
-│   ├── htmlhint
-│   ├── http-server
-│   ├── jshint
-│   ├── jslint
-│   ├── jsxhint
-│   ├── jsonlint
-│   ├── matches-selector
-│   ├── node-sass
-│   ├── nodemon
-│   ├── npm
-│   ├── pm2
-│   ├── randomperson
-│   ├── serve
-│   ├── titanium
-│   └── yo
-|
 ├── 5) ruby gems
-│   ├── compass
-│   └── scss-lint
-|
 ├── 6) apps
-│   ├── appcleaner
-│   ├── bettertouchtool
-│   ├── caffeine
-│   ├── diskmaker-x
-│   ├── dropbox
-│   ├── filezilla
-│   ├── firefox
-│   ├── firefox-nightly
-│   ├── google-chrome
-│   ├── google-chrome-canary
-│   ├── handbrake
-│   ├── handbrakecli
-│   ├── ifunbox
-│   ├── iterm2
-│   ├── keepassx
-│   ├── imageoptim
-│   ├── licecap
-│   ├── mactracker
-│   ├── mplayer-osx-extended
-│   ├── mysqlworkbench
-│   ├── openemu
-│   ├── sdformatter
-│   ├── sequel-pro
-│   ├── skype
-│   ├── slack
-│   ├── spotify
-│   ├── sublime-text3
-│   ├── teamviewer
-│   ├── transmission
-│   ├── trash-it
-│   ├── tvrenamer
-│   ├── virtualbox
-│   ├── vagrant
-│   └── vlc
-|
 └── 7) sublime text 3 packages
-    ├── AlignTab
-    ├── ApacheConf.tmLanguage
-    ├── Babel
-    ├── CSS3
-    ├── DocBlockr
-    ├── EditorConfig
-    ├── FuzzyFilePath
-    ├── Git Conflict Resolver
-    ├── Gitignore
-    ├── HTML Snippets
-    ├── HTML Underscore Syntax
-    ├── HTML5
-    ├── Handlebars
-    ├── Markdown Preview
-    ├── Minify
-    ├── nginx
-    ├── Objective-C Autocompletion
-    ├── Package Control
-    ├── Random Everything
-    ├── SCSS
-    ├── Sass
-    ├── SideBarEnhancements
-    ├── SublimeLinter
-    ├── SublimeLinter-contrib-clang
-    ├── SublimeLinter-contrib-htmlhint
-    ├── SublimeLinter-contrib-java
-    ├── SublimeLinter-contrib-scss-lint
-    ├── SublimeLinter-csslint
-    ├── SublimeLinter-jshint
-    ├── SublimeLinter-json
-    ├── SublimeLinter-jsxhint
-    ├── SublimeLinter-php
-    ├── SublimeLinter-pylint
-    ├── SublimeLinter-ruby
-    ├── SublimeLinter-shellcheck
-    └── Tag
 ```
 
 ## Thanks ##
