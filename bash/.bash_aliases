@@ -24,10 +24,11 @@ alias nvm_use_4="nvm alias default 4 && nvm use default && exec bash --login";
 # fun
 alias starwars="telnet towel.blinkenlights.nl";
 
-# docker
+# docker & kubernetes
 alias dkps='docker ps -a';
 alias dkstop='docker ps -aq | xargs docker stop';
 alias dkrm='docker ps -aq | xargs docker rm';
+alias kube_info='kubectl config view --minify';
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
