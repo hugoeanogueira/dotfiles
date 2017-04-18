@@ -33,3 +33,6 @@ export GREP_OPTIONS='--color=auto';
 
 # Homebrew Cask (legacy)
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/opt/homebrew-cask/Caskroom"
+
+# Gatling home folder
+export GATLING_HOME='/Users/hugonogueira/apps/gatling-charts-highcharts-bundle-2.2.4';
