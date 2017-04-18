@@ -36,3 +36,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/opt/homebrew-cask/
 
 # Gatling home folder
 export GATLING_HOME='/Users/hugonogueira/apps/gatling-charts-highcharts-bundle-2.2.4';
+
+# use brew's scala with intellij
+export SCALA_HOME='/usr/local/opt/scala/idea';
