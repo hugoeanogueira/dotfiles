@@ -21,6 +21,7 @@ install () {
 
     # install brew-cask and update formulas
     # brew install caskroom/cask/brew-cask; # deprecated (now bundled with brew)
+    brew tap caskroom/cask;
     brew tap caskroom/versions;
     brew update;
 
