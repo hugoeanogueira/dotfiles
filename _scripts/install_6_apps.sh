@@ -46,6 +46,7 @@ install () {
     brew cask install handbrake;
     brew cask install handbrakecli;
     brew cask install ifunbox;
+    brew cask install intellij-idea-ce;
     brew cask install iterm2;
     brew cask install imageoptim;
     brew cask install licecap;
