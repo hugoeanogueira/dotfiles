@@ -22,9 +22,9 @@ install () {
     # gem install -n /usr/local/bin scss_lint
 
     ## ruby gems ##
-    gem install compass -n /usr/local/bin;
-    gem install jekyll -n /usr/local/bin;
-    gem install scss_lint -n /usr/local/bin;
+    # gem install -n /usr/local/bin compass;
+    # gem install -n /usr/local/bin jekyll;
+    gem install -n /usr/local/bin scss_lint;
     rbenv rehash;
 }
 
