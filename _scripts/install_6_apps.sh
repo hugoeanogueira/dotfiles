@@ -75,6 +75,7 @@ install () {
     brew cask install virtualbox;
     brew cask install vagrant;
     brew cask install vlc;
+    brew cask install zeplin;
 
     vagrant plugin install vagrant-berkshelf;
     vagrant plugin install vagrant-cachier;
