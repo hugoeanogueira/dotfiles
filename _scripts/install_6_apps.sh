@@ -45,7 +45,6 @@ install () {
     brew cask install google-chrome-canary;
     brew cask install google-cloud-sdk;
     brew cask install handbrake;
-    brew cask install handbrakecli;
     brew cask install ifunbox;
     brew cask install intellij-idea-ce;
     brew cask install iterm2;
@@ -65,13 +64,13 @@ install () {
     brew cask install skype;
     brew cask install slack;
     brew cask install spotify;
-    brew cask install sublime-text3;
+    brew cask install sublime-text;
     brew cask install teamviewer;
     brew cask install tunnelbear;
     brew cask install transmission;
     brew cask install trash-it;
     brew cask install tvrenamer;
-    brew cask install valentina-studio;
+    # brew cask install valentina-studio;
     brew cask install virtualbox;
     brew cask install vagrant;
     brew cask install vlc;
