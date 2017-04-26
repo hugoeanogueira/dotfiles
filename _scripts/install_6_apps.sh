@@ -58,7 +58,7 @@ install () {
     brew cask install namechanger;
     brew cask install openemu;
     brew cask install opera;
-    brew cask install oversight;
+    # brew cask install oversight;
     brew cask install psequel;
     brew cask install sdformatter;
     brew cask install sequel-pro;
@@ -76,6 +76,9 @@ install () {
     brew cask install vagrant;
     brew cask install vlc;
     brew cask install zeplin;
+
+    echo "PLEASE INSTALL OVERSIGHT MANUALLY!";
+    echo "run 'brew cask install oversight'";
 
     vagrant plugin install vagrant-berkshelf;
     vagrant plugin install vagrant-cachier;
