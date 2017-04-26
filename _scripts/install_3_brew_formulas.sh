@@ -87,6 +87,7 @@ install () {
     brew install htop-osx;
     brew install httpie;
     brew install jmeter;
+    brew install kubectl;
     brew install maven;
     brew install md5sha1sum;
     brew install nmap;
