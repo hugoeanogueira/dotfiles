@@ -90,7 +90,7 @@ install_packages () {
         "Markdown Preview",
         "Minify",
         "nginx",
-        "Less",
+        "LESS",
         "Objective-C Autocompletion",
         "Package Control",
         "Pretty JSON",
@@ -115,7 +115,6 @@ install_packages () {
         "SublimeLinter-ruby",
         "SublimeLinter-shellcheck",
         "Sublimerge 3",
-        "Tag",
         "Vue Syntax Highlight"
     ]
 }
