@@ -76,6 +76,7 @@ install () {
     brew cask install vagrant;
     brew cask install vlc;
     brew cask install zeplin;
+    brew cask install zoomus;
 
     echo "PLEASE INSTALL OVERSIGHT MANUALLY!";
     echo "run 'brew cask install oversight'";
