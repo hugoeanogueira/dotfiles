@@ -52,6 +52,7 @@ install () {
     npm install -g randomperson;
     npm install -g serve;
     npm install -g svgo;
+    npm install -g typescript;
     npm install -g uglify-js;
     npm install -g uglifycss;
     npm install -g up;
