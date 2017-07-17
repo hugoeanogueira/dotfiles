@@ -87,6 +87,7 @@ install_packages () {
         "HTML-CSS-JS Prettify",
         "HTML5",
         "Insert Nums",
+        "JsFormat",
         "Markdown Preview",
         "Minify",
         "nginx",
