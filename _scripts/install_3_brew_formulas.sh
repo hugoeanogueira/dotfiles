@@ -80,14 +80,18 @@ install () {
     brew install ansible;
     brew install apg;
     brew install autoconf;
+    brew install ccat;
     brew install gist;
     brew install git-crypt;
     brew install git-flow-avh;
     brew install git-open;
     brew install htop-osx;
     brew install httpie;
+    brew install imgcat;
     brew install jmeter;
     brew install kubectl;
+    brew install m-cli;
+    brew install mas;
     brew install maven;
     brew install md5sha1sum;
     brew install nmap;
@@ -99,13 +103,13 @@ install () {
     brew install shellcheck;
     brew install speedtest_cli;
     brew install sshfs;
+    brew install tldr;
     brew install tmux;
     brew install to;
     brew install tree;
     brew install unrar;
-    brew install sqitch;
-    brew install wifi-password;
     brew install wget;
+    brew install wifi-password;
 
     ## ansible roles ##
     ansible-galaxy install ANXS.build-essential --force;
