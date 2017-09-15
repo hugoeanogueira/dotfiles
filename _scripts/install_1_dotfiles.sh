@@ -57,6 +57,10 @@ install () {
     ln -s "$PARENT_DIR/sublime/.jshintrc" "$HOME/.jshintrc";
     ln -s "$PARENT_DIR/sublime/.scss-lint.yml" "$HOME/.scss-lint.yml";
 
+    # eslint
+    ln -s "$PARENT_DIR/eslint/.eslintignore" "$HOME/.eslintignore";
+    ln -s "$PARENT_DIR/eslint/.eslintrc.json" "$HOME/.eslintrc.json";
+
     # tmux
     ln -s "$PARENT_DIR/tmux/.tmux.conf" "$HOME/.tmux.conf";
 
