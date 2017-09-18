@@ -70,6 +70,7 @@ install_packages () {
         "ApacheConf.tmLanguage",
         "Babel",
         "Color Highlighter",
+        "Colorsublime",
         "CSS3",
         "Diffy",
         "DocBlockr",
