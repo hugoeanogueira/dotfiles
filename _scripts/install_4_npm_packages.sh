@@ -52,6 +52,7 @@ install () {
     npm install -g uglifycss;
     # npm install -g up;
     npm install -g webpack-dev-server;
+    npm install -g webpack;
     # npm install -g yo;
 
     # eslint & babel for sublime...
@@ -62,6 +63,7 @@ install () {
     npm install -g eslint-plugin-import;
     npm install -g eslint-plugin-jsx-a11y;
     npm install -g eslint-plugin-react;
+    npm install -g eslint-plugin-jsx-a11y;
     npm install -g babel-eslint;
     npm install -g babel-plugin-dynamic-import-node;
     npm install -g babel-plugin-lodash;
