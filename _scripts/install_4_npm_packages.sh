@@ -23,7 +23,7 @@ install () {
     npm install -g npm@5;
 
     ## npm packages ##
-    npm install -g bower;
+    # npm install -g bower;
     npm install -g clean-css;
     npm install -g csslint;
     npm install -g gist;
@@ -36,7 +36,7 @@ install () {
     npm install -g jsxhint;
     npm install -g jsonlint;
     npm install -g js-beautify;
-    npm install -g matches-selector;
+    # npm install -g matches-selector;
     npm install -g minjson;
     npm install -g npm-check;
     npm install -g npm-check-updates;
