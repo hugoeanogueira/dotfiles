@@ -107,8 +107,8 @@ install () {
     then
         # install node and npm
         info "Installing node and npm.";
-        nvm install 6;
-        nvm alias default 6;
+        nvm install 8;
+        nvm alias default 8;
         nvm use default;
 
         # update bash_profile
