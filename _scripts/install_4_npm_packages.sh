@@ -61,9 +61,8 @@ install () {
     npm install -g eslint-config-angular;
     npm install -g eslint-plugin-angular;
     npm install -g eslint-plugin-import;
-    npm install -g eslint-plugin-jsx-a11y;
+    npm install -g eslint-plugin-jsx-a11y@5;
     npm install -g eslint-plugin-react;
-    npm install -g eslint-plugin-jsx-a11y;
     npm install -g babel-eslint;
     npm install -g babel-plugin-dynamic-import-node;
     npm install -g babel-plugin-lodash;
