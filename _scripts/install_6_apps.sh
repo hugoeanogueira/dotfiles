@@ -33,6 +33,7 @@ install () {
     brew cask install chefdk
     brew cask install cloudup;
     brew cask install cord;
+    brew cask install dbeaver-community;
     brew cask install diskmaker-x;
     brew cask install diskwave;
     brew cask install docker;
