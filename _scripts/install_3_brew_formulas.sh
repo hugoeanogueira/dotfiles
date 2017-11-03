@@ -72,7 +72,6 @@ install () {
 
     # add repositories
     brew tap homebrew/fuse;
-    brew tap theory/sqitch;
     brew update;
 
     ## brew formulas ##
@@ -112,9 +111,9 @@ install () {
     brew install wifi-password;
 
     ## ansible roles ##
-    ansible-galaxy install ANXS.build-essential --force;
-    ansible-galaxy install ANXS.nodejs --force;
-    ansible-galaxy install ANXS.postgresql --force;
+    # ansible-galaxy install ANXS.build-essential --force;
+    # ansible-galaxy install ANXS.nodejs --force;
+    # ansible-galaxy install ANXS.postgresql --force;
 
     ## autoenv ##
     brew install autoenv;
