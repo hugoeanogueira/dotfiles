@@ -1,4 +1,3 @@
-
 # Default editors
 export EDITOR='vim'
 export VISUAL='subl'
@@ -31,8 +30,9 @@ export LESS_TERMCAP_md="${yellow}";
 # Always enable colored `grep` output.
 export GREP_OPTIONS='--color=auto';
 
-# Homebrew Cask (legacy)
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/opt/homebrew-cask/Caskroom"
+# Homebrew & homebrew cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export HOMEBREW_NO_ANALYTICS=1
 
 # Gatling home folder
 export GATLING_HOME='/Users/hugonogueira/apps/gatling-charts-highcharts-bundle-2.2.4';
