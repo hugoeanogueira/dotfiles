@@ -66,15 +66,26 @@ export NVM_DIR="$HOME/.nvm"
 # https://www.iterm2.com/documentation-shell-integration.html
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-# bash auto completion
+##
+# BASH AUTOCOMPLETE
+#
+
+# brew autocomplete
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 source $(brew --prefix)/etc/bash_completion > /dev/null
 fi
 
+# git autocomplete
 if [ -f "$HOME/.git_completion.bash" ]; then
 source "$HOME/.git_completion.bash" > /dev/null
 fi
 
+# maven autocomplete
 if [ -f "$HOME/.maven_completion.bash" ]; then
 source "$HOME/.maven_completion.bash" > /dev/null
+fi
+
+# glcoud autocomplete
+if [ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" ]; then
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" > /dev/null
 fi
