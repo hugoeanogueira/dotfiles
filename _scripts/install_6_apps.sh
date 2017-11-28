@@ -55,7 +55,7 @@ install () {
     brew cask install macpass;
     brew cask install mactracker;
     brew cask install minikube;
-    brew cask install mysqlworkbench;
+    # brew cask install mysqlworkbench;
     brew cask install namechanger;
     brew cask install openemu;
     brew cask install opera;
