@@ -38,7 +38,7 @@ install () {
     brew cask install diskwave;
     brew cask install docker;
     brew cask install dropbox;
-    brew cask install filezilla;
+    # brew cask install filezilla;
     brew cask install firefox;
     brew cask install firefoxnightly;
     brew cask install freac;
