@@ -32,15 +32,12 @@ install () {
     brew cask install charles;
     brew cask install chefdk
     brew cask install cloudup;
-    brew cask install cord;
     brew cask install dbeaver-community;
     brew cask install diskmaker-x;
     brew cask install diskwave;
     brew cask install docker;
     brew cask install dropbox;
-    # brew cask install filezilla;
     brew cask install firefox;
-    brew cask install firefoxnightly;
     brew cask install freac;
     brew cask install google-chrome;
     brew cask install google-chrome-canary;
@@ -55,29 +52,34 @@ install () {
     brew cask install macpass;
     brew cask install mactracker;
     brew cask install minikube;
-    # brew cask install mysqlworkbench;
     brew cask install namechanger;
     brew cask install openemu;
     brew cask install opera;
-    # brew cask install oversight;
-    brew cask install psequel;
     brew cask install sdformatter;
-    brew cask install sequel-pro;
-    brew cask install skype;
     brew cask install slack;
     brew cask install spotify;
     brew cask install sublime-text;
     brew cask install teamviewer;
-    brew cask install tunnelbear;
     brew cask install transmission;
     brew cask install trash-it;
     brew cask install tvrenamer;
-    # brew cask install valentina-studio;
     brew cask install virtualbox;
     brew cask install vagrant;
     brew cask install vlc;
     brew cask install zeplin;
     brew cask install zoomus;
+
+    ## unused apps
+    # brew cask install cord;
+    # brew cask install filezilla;
+    # brew cask install firefoxnightly;
+    # brew cask install mysqlworkbench;
+    # brew cask install oversight;
+    # brew cask install psequel;
+    # brew cask install sequel-pro;
+    # brew cask install skype;
+    # brew cask install tunnelbear;
+    # brew cask install valentina-studio;
 
     echo "PLEASE INSTALL OVERSIGHT MANUALLY!";
     echo "run 'brew cask install oversight'";
