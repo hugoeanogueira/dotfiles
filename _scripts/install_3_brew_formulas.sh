@@ -97,7 +97,7 @@ install () {
     brew install openssl;
     brew install ossp-uuid;
     brew install phantomjs;
-    brew install postgresql;
+    # brew install postgresql;
     brew install scala --with-docs;
     brew install shellcheck;
     brew install speedtest_cli;
