@@ -96,3 +96,7 @@ dist
 _tmp
 .sass-cache
 build
+.idea
+.vscode
+play-2.1.5
+.java-version

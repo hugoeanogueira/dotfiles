@@ -1,6 +1,5 @@
-
 # common
-alias .='ls -lahG';
+# alias .='ls -lahG';
 alias ..='cd ../';
 alias c='clear';
 alias countf='ls | wc -l';
@@ -13,13 +12,9 @@ alias ips='ifconfig > /tmp/ip.txt && grep '\''inet '\'' /tmp/ip.txt';
 # alias l='ls -lahG';
 alias hosts='sudo $EDITOR /etc/hosts';
 alias flush="sudo killall -HUP mDNSResponder"
-alias reload_bash="exec bash --login";
-alias open_icons="open /System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/";
 
-alias nvm_install_10="nvm install 0.10 && nvm alias default 0.10 && nvm use default && exec bash --login";
-alias nvm_use_10="nvm alias default 0.10 && nvm use default && exec bash --login";
-alias nvm_install_4="nvm install 4 && nvm alias default 4 && nvm use default && npm install -g npm@3 && exec bash --login";
-alias nvm_use_4="nvm alias default 4 && nvm use default && exec bash --login";
+# projects
+alias npm_reader="npm run frontend-compile-watch";
 
 # fun
 alias starwars="telnet towel.blinkenlights.nl";

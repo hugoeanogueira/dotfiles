@@ -30,7 +30,6 @@ install () {
     brew cask install atom;
     brew cask install caffeine;
     brew cask install charles;
-    brew cask install chefdk
     brew cask install cloudup;
     brew cask install dbeaver-community;
     brew cask install diskmaker-x;
@@ -70,6 +69,7 @@ install () {
     brew cask install zoomus;
 
     ## unused apps
+    # brew cask install chefdk
     # brew cask install cord;
     # brew cask install filezilla;
     # brew cask install firefoxnightly;
@@ -84,9 +84,9 @@ install () {
     echo "PLEASE INSTALL OVERSIGHT MANUALLY!";
     echo "run 'brew cask install oversight'";
 
-    vagrant plugin install vagrant-berkshelf;
-    vagrant plugin install vagrant-cachier;
-    vagrant plugin install vagrant-omnibus;
+    # vagrant plugin install vagrant-berkshelf;
+    # vagrant plugin install vagrant-cachier;
+    # vagrant plugin install vagrant-omnibus;
 
     ## GPG
     ## https://gpgtoolsols.org/

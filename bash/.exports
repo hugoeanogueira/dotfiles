@@ -38,4 +38,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export GATLING_HOME='/Users/hugonogueira/apps/gatling-charts-highcharts-bundle-2.2.4';
 
 # use brew's scala with intellij
-export SCALA_HOME='/usr/local/opt/scala/idea';
+export SCALA_HOME='/Users/hugonogueira/.ivy2/cache/org.scala-lang';
+
+# Play Framework 2.1
+export PATH=$PATH:/Users/hugonogueira/development/adtalem/_bin/play-2.1.5;

@@ -38,10 +38,23 @@ export PATH="$RBENV_ROOT/shims:$PATH"
 [ -e "$RBENV_ROOT/bin" ] && eval "$(rbenv init -)"
 [ -e "$RBENV_ROOT/completions/rbenv.bash" ] && source "$RBENV_ROOT/completions/rbenv.bash";
 
-# JEnv
+#
+# JAVA & JEnv
+#
 export JENV_ROOT="$HOME/.jenv"
 export PATH="$JENV_ROOT/bin:$PATH"
 [ -e "$JENV_ROOT/bin" ] && eval "$(jenv init -)"
+
+# configure aliases to change java versions
+export JAVA_6_HOME="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home";
+export JAVA_8_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home";
+
+alias java_6='export JAVA_HOME=$JAVA_6_HOME';
+alias java_8='export JAVA_HOME=$JAVA_8_HOME';
+
+# export default java version (java 8)
+export JAVA_HOME=$JAVA_8_HOME;
+
 
 # Start Go
 export GOPATH="$HOME/Go"
@@ -49,6 +62,10 @@ export GOROOT="/usr/local/opt/go/libexec"
 PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$GOROOT/bin"
 [ -e "$GOPATH/go.sh" ] && source "$GOPATH/go.sh"
+
+# configure macos gem
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
 
 # rupa/z
 if command -v brew >/dev/null 2>&1; then
@@ -65,6 +82,10 @@ export NVM_DIR="$HOME/.nvm"
 # iTerm 2 shell integration (must run the install script)
 # https://www.iterm2.com/documentation-shell-integration.html
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# Android SDK/NDK
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/ndk-bundle:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$PATH"
 
 ##
 # BASH AUTOCOMPLETE
@@ -89,3 +110,6 @@ fi
 if [ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" ]; then
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" > /dev/null
 fi
+
+# export mysql
+export PATH="/usr/local/opt/mysql@5.5/bin:$PATH"
