@@ -112,4 +112,4 @@ source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 fi
 
 # export mysql
-export PATH="/usr/local/opt/mysql@5.5/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
