@@ -19,8 +19,8 @@ start () {
 install () {
     echo "Installing npm packages...";
 
-    ## make sure npm is at version 5 ##
-    npm install -g npm@5;
+    ## make sure npm is at version 6 ##
+    npm install -g npm@6;
 
     ## npm packages ##
     # npm install -g bower;
@@ -52,8 +52,7 @@ install () {
     npm install -g typescript;
     npm install -g uglify-js;
     npm install -g uglifycss;
-    npm install -g webpack-dev-server;
-    npm install -g webpack;
+    npm install -g yarn;
 
     # eslint & babel for sublime...
     npm install -g babel-eslint;
