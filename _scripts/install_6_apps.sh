@@ -27,13 +27,10 @@ install () {
 
     brew cask install 4k-video-downloader
     brew cask install appcleaner;
-    brew cask install atom;
     brew cask install caffeine;
     brew cask install charles;
     brew cask install cloudup;
-    brew cask install dbeaver-community;
     brew cask install diskmaker-x;
-    brew cask install diskwave;
     brew cask install docker;
     brew cask install dropbox;
     brew cask install firefox;
@@ -53,7 +50,6 @@ install () {
     brew cask install minikube;
     brew cask install namechanger;
     brew cask install openemu;
-    brew cask install opera;
     brew cask install sdformatter;
     brew cask install slack;
     brew cask install spotify;
@@ -63,24 +59,28 @@ install () {
     brew cask install trash-it;
     brew cask install tvrenamer;
     brew cask install virtualbox;
-    brew cask install vagrant;
     brew cask install vlc;
     brew cask install zeplin;
     brew cask install zoomus;
 
     ## unused apps
+    # brew cask install atom;
     # brew cask install chefdk
     # brew cask install cord;
+    # brew cask install dbeaver-community;
+    # brew cask install diskwave;
     # brew cask install filezilla;
     # brew cask install firefoxnightly;
     # brew cask install mysqlworkbench;
+    # brew cask install opera;
     # brew cask install oversight;
     # brew cask install psequel;
     # brew cask install sequel-pro;
     # brew cask install skype;
     # brew cask install tunnelbear;
+    # brew cask install vagrant;
     # brew cask install valentina-studio;
-
+   
     echo "PLEASE INSTALL OVERSIGHT MANUALLY!";
     echo "run 'brew cask install oversight'";
 
