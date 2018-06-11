@@ -76,7 +76,6 @@ install () {
 
     ## brew formulas ##
     brew install ack;
-    brew install ansible;
     brew install apg;
     brew install autoconf;
     brew install ccat;
@@ -97,27 +96,29 @@ install () {
     brew install openssl;
     brew install ossp-uuid;
     brew install phantomjs;
-    # brew install postgresql;
-    brew install scala --with-docs;
     brew install shellcheck;
-    brew install speedtest_cli;
     brew install sshfs;
     brew install tldr;
     brew install tmux;
     brew install to;
     brew install tree;
-    brew install unrar;
     brew install wget;
-    brew install wifi-password;
-
+    
+    # brew install ansible;
+    # brew install postgresql;
+    # brew install scala --with-docs;
+    # brew install speedtest_cli;
+    # brew install unrar;
+    # brew install wifi-password;
+    
     ## ansible roles ##
     # ansible-galaxy install ANXS.build-essential --force;
     # ansible-galaxy install ANXS.nodejs --force;
     # ansible-galaxy install ANXS.postgresql --force;
 
     ## autoenv ##
-    brew install autoenv;
-    update_path_autoenv;
+    # brew install autoenv;
+    # update_path_autoenv;
 
     ## bash completion ##
     brew tap homebrew/completions;
