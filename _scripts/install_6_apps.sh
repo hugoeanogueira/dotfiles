@@ -58,6 +58,7 @@ install () {
     brew cask install transmission;
     brew cask install trash-it;
     brew cask install tvrenamer;
+    brew cask install visual-studio-code;
     brew cask install virtualbox;
     brew cask install vlc;
     brew cask install zeplin;
