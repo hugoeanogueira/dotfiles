@@ -49,6 +49,7 @@ install () {
     brew cask install minikube;
     brew cask install namechanger;
     brew cask install openemu;
+    brew cask install postman;
     brew cask install sdformatter;
     brew cask install slack;
     brew cask install spotify;
@@ -80,7 +81,7 @@ install () {
     # brew cask install tunnelbear;
     # brew cask install vagrant;
     # brew cask install valentina-studio;
-   
+
     echo "PLEASE INSTALL OVERSIGHT MANUALLY!";
     echo "run 'brew cask install oversight'";
 
