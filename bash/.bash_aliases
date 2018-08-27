@@ -60,5 +60,7 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
 alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
 
+alias chrome='open -a "Google Chrome"'
+
 # ADD EXTRA ALIASES
 if [ -f ~/.bash_aliases.extra ]; then source ~/.bash_aliases.extra; fi;
