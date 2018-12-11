@@ -111,5 +111,8 @@ if [ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" > /dev/null
 fi
 
+# export gcloud components bins
+export PATH="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH"
+
 # export mysql
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
