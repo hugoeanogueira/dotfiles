@@ -66,7 +66,7 @@ install () {
 
     ## unused apps
     # brew cask install atom;
-    # brew cask install chefdk
+    # brew cask install chef/chefchefdk
     # brew cask install cord;
     # brew cask install dbeaver-community;
     # brew cask install diskwave;
