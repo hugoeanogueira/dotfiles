@@ -108,3 +108,9 @@ export PATH="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$P
 
 # export mysql
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
+# CS50 C configs
+export CC="clang"
+export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
+export LDLIBS="-lcs50"
+# export LDLIBS="-lcrypt -lcs50 -lm"
