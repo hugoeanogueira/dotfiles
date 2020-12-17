@@ -64,3 +64,7 @@ alias chrome='open -a "Google Chrome"'
 
 # ADD EXTRA ALIASES
 if [ -f ~/.bash_aliases.extra ]; then source ~/.bash_aliases.extra; fi;
+
+# Wireguard VPN
+alias vpn-up="wg-quick up rows";
+alias vpn-down="wg-quick down rows";
