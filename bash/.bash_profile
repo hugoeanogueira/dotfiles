@@ -46,7 +46,14 @@ export PATH="$JENV_ROOT/bin:$PATH"
 [ -e "$JENV_ROOT/bin" ] && eval "$(jenv init -)"
 
 # export default java version (java 8)
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home";
+JDK_8="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/";
+JDK_11="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/";
+JDK_13="/Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home/";
+export JAVA_HOME="$JDK_13";
+
+alias jdk8="export JAVA_HOME=$JDK_8; java -version";
+alias jdk11="export JAVA_HOME=$JDK_11; java -version";
+alias jdk13="export JAVA_HOME=$JDK_13; java -version";
 
 # Start Go
 export GOPATH="$HOME/Go"
