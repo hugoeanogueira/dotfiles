@@ -1,0 +1,10 @@
+# -----------------------------
+#  ALL HOSTS
+# -----------------------------
+
+# Prevent broken pipes during SSH
+Host *
+    ServerAliveInterval 120
+    AddKeysToAgent yes
+    UseKeychain yes
+    # IdentityFile ~/.ssh/id_rsa

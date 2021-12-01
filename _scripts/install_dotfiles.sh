@@ -38,6 +38,9 @@ install () {
     ln -s "$PARENT_DIR/git/.gitconfig" "$HOME/.gitconfig";
     ln -s "$PARENT_DIR/.gitignore" "$HOME/.gitignore";
 
+    # ssh
+    cp "$PARENT_DIR/git/ssh_config" "$HOME/.ssh/config";
+
     # editors
     ln -s "$PARENT_DIR/.editorconfig" "$HOME/.editorconfig";
 
