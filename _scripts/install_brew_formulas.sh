@@ -24,6 +24,7 @@ install () {
     brew install ccat;
     brew install git-open;
     brew install htop-osx;
+    brew install ktlint;
     brew install kubectl;
     brew install maven;
     brew install openssl;
@@ -35,6 +36,10 @@ install () {
     ## bash completion ##
     brew tap homebrew/completions;
     brew install bash-completion;
+
+    # Dependencies to compile node-canvas during npm install
+    # https://github.com/Automattic/node-canvas
+    brew install pkg-config cairo pango libpng jpeg giflib librsvg
 }
 
 start;
