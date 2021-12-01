@@ -38,7 +38,7 @@ install () {
         success "Homebrew and packages updated!";
     else
         info "Installing homebrew";
-        printf '\n' | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        printf '\n' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
         # └─ simulate ENTER keypress
         success "Installed homebrew";
     fi

@@ -7,6 +7,8 @@
 
 # find folder
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd );
+PARENT_DIR=$(dirname "$DIR");
+
 . "$DIR/utils.sh";
 
 start () {
@@ -107,8 +109,8 @@ install () {
     then
         # install node and npm
         info "Installing node and npm.";
-        nvm install 8;
-        nvm alias default 8;
+        nvm install 16;
+        nvm alias default 16;
         nvm use default;
 
         # update bash_profile
@@ -117,10 +119,8 @@ install () {
         info "Node already installed.";
     fi;
 
-    # update npm to version 2.x and set log level to info
-    info "Updating npm to latest version";
-    npm install -g npm@next
-    npm config set loglevel info
+    info "Copying .npmrc";
+    cp "$PARENT_DIR/npm/.npmrc" "$HOME/.npmrc";
 
     success "NVM installed!";
 }

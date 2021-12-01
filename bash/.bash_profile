@@ -21,22 +21,20 @@ if [ -f ~/.bash_profile.extra ]; then source ~/.bash_profile.extra; fi;
 
 # -------- Added by install.sh -------- #
 
-[ -e "/Applications/MAMP/bin" ] && export PATH=/Applications/MAMP/bin:$PATH;
-
 # autoenv
 [ -e "/usr/local/opt/autoenv/activate.sh" ] && source "/usr/local/opt/autoenv/activate.sh";
 
-# PyEnv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-[ -e "$PYENV_ROOT/bin" ] && eval "$(pyenv init -)"
+# # PyEnv
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# [ -e "$PYENV_ROOT/bin" ] && eval "$(pyenv init -)"
 
-# RbEnv
-export RBENV_ROOT="$HOME/.rbenv"
-export PATH="$RBENV_ROOT/bin:$PATH"
-export PATH="$RBENV_ROOT/shims:$PATH"
-[ -e "$RBENV_ROOT/bin" ] && eval "$(rbenv init -)"
-[ -e "$RBENV_ROOT/completions/rbenv.bash" ] && source "$RBENV_ROOT/completions/rbenv.bash";
+# # RbEnv
+# export RBENV_ROOT="$HOME/.rbenv"
+# export PATH="$RBENV_ROOT/bin:$PATH"
+# export PATH="$RBENV_ROOT/shims:$PATH"
+# [ -e "$RBENV_ROOT/bin" ] && eval "$(rbenv init -)"
+# [ -e "$RBENV_ROOT/completions/rbenv.bash" ] && source "$RBENV_ROOT/completions/rbenv.bash";
 
 #
 # JAVA & JEnv
@@ -55,12 +53,12 @@ alias jdk8="export JAVA_HOME=$JDK_8; java -version";
 alias jdk11="export JAVA_HOME=$JDK_11; java -version";
 alias jdk13="export JAVA_HOME=$JDK_13; java -version";
 
-# Start Go
-export GOPATH="$HOME/Go"
-export GOROOT="/usr/local/opt/go/libexec"
-PATH="$PATH:$GOPATH/bin"
-PATH="$PATH:$GOROOT/bin"
-[ -e "$GOPATH/go.sh" ] && source "$GOPATH/go.sh"
+# # Start Go
+# export GOPATH="$HOME/Go"
+# export GOROOT="/usr/local/opt/go/libexec"
+# PATH="$PATH:$GOPATH/bin"
+# PATH="$PATH:$GOROOT/bin"
+# [ -e "$GOPATH/go.sh" ] && source "$GOPATH/go.sh"
 
 # configure macos gem
 export GEM_HOME=$HOME/.gem
@@ -75,16 +73,13 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -e "$(brew --prefix nvm)/nvm.sh" ] && source "$(brew --prefix nvm)/nvm.sh";
 
-# # nvbn/thefuck
-# eval "$(thefuck --alias)"
-
 # iTerm 2 shell integration (must run the install script)
 # https://www.iterm2.com/documentation-shell-integration.html
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-# Android SDK/NDK
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH="$ANDROID_HOME/ndk-bundle:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$PATH"
+# # Android SDK/NDK
+# export ANDROID_HOME="$HOME/Library/Android/sdk"
+# export PATH="$ANDROID_HOME/ndk-bundle:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools/bin:$PATH"
 
 ##
 # BASH AUTOCOMPLETE
@@ -100,11 +95,6 @@ if [ -f "$HOME/.git_completion.bash" ]; then
 source "$HOME/.git_completion.bash" > /dev/null
 fi
 
-# maven autocomplete
-if [ -f "$HOME/.maven_completion.bash" ]; then
-source "$HOME/.maven_completion.bash" > /dev/null
-fi
-
 # glcoud autocomplete
 if [ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" ]; then
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" > /dev/null
@@ -112,9 +102,6 @@ fi
 
 # export gcloud components bins
 export PATH="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH"
-
-# export mysql
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
 # CS50 C configs
 export CC="clang"

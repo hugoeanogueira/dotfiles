@@ -1,23 +1,11 @@
 # common
-# alias .='ls -lahG';
 alias ..='cd ../';
-alias c='clear';
 alias countf='ls | wc -l';
-alias gi='gist -c -p -P -s -t js';
 alias gs='git status';
 alias gb='git branch';
 alias grp='git rp';
-alias ip='dig +short myip.opendns.com @resolver1.opendns.com';
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com';
 alias ips='ifconfig > /tmp/ip.txt && grep '\''inet '\'' /tmp/ip.txt';
-# alias l='ls -lahG';
-alias hosts='sudo $EDITOR /etc/hosts';
-alias flush="sudo killall -HUP mDNSResponder"
-
-# projects
-alias npm_reader="npm run frontend-compile-watch";
-
-# fun
-alias starwars="telnet towel.blinkenlights.nl";
 
 # docker & kubernetes
 alias dkps='docker ps -a';

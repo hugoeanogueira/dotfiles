@@ -1,6 +1,0 @@
-{
-    "preset": "airbnb",
-    "esnext": true,
-    "validateIndentation": 4,
-    "excludeFiles" : ["node_modules/**", "app/bower_components/**"]
-}
