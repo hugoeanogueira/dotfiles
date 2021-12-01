@@ -38,8 +38,11 @@ install () {
         success "Homebrew and packages updated!";
     else
         info "Installing homebrew";
+
+        # @TODO fix this because it needs sudo
         printf '\n' | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
         # └─ simulate ENTER keypress
+
         success "Installed homebrew";
     fi
 }
