@@ -9,6 +9,9 @@ if [ -f ~/.inputrc ]; then source ~/.inputrc; fi;
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH;
 
+# Add homebrew to PATH
+export PATH="/opt/homebrew/bin:$PATH";
+
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
