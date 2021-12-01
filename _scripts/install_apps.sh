@@ -20,8 +20,10 @@ install () {
     echo "Installing applications...";
 
     brew install --cask appcleaner;
+    brew install --cask bloomrpc;
     brew install --cask caffeine;
     brew install --cask docker;
+    brew install --cask figma;
     brew install --cask firefox;
     brew install --cask google-chrome;
     brew install --cask google-cloud-sdk;
