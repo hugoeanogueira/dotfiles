@@ -44,7 +44,7 @@ install () {
     brew install --cask virtualbox;
     brew install --cask visual-studio-code;
     brew install --cask vlc;
-    brew install --cask zoomus;
+    brew install --cask zoom;
 
     ## unused apps
     # brew install --cask 4k-video-downloader
