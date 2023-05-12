@@ -11,6 +11,6 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd );
 
 echo "--- Java ---";
 
-brew install openjdk@11;
+brew install --cask termurin19;
 
 success "Done!";

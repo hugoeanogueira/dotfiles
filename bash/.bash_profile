@@ -1,4 +1,3 @@
-
 # load .bashrc .bash_aliases
 if [ -f ~/.bashrc ]; then source ~/.bashrc; fi;
 if [ -f ~/.bash_aliases ]; then source ~/.bash_aliases; fi;
@@ -51,15 +50,17 @@ JDK_8="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/";
 JDK_11="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/";
 JDK_13="/Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home/";
 JDK_11_ARM="/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home/";
-export JAVA_HOME="$JDK_11_ARM";
+JDK_19_ARM="/Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/";
+export JAVA_HOME="$JDK_19_ARM";
 
 alias jdk8="export JAVA_HOME=$JDK_8; java -version";
 alias jdk11="export JAVA_HOME=$JDK_11; java -version";
 alias jdk13="export JAVA_HOME=$JDK_13; java -version";
 alias jdk11_arm="export JAVA_HOME=$JDK_11_ARM; java -version";
+alias jdk19_arm="export JAVA_HOME=$JDK_19_ARM; java -version";
 
-# expose openjdk@11 (arm) for compilers
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
+# expose openjdk@17 (arm) for compilers
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 
 # # Start Go
 # export GOPATH="$HOME/Go"
@@ -103,19 +104,17 @@ if [ -f "$HOME/.git_completion.bash" ]; then
 source "$HOME/.git_completion.bash" > /dev/null
 fi
 
-# glcoud autocomplete
-if [ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" ]; then
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" > /dev/null
-fi
-
 # export gcloud components bins
-export PATH="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH"
+if [ -f "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc" ]; then
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"
+fi
 
 # CS50 C configs
 export CC="clang"
-export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
+# export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
 export LDLIBS="-lcs50"
 # export LDLIBS="-lcrypt -lcs50 -lm"
 
 # Include headers to compile Protobuf files
 export CXXFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib"
+. "$HOME/.cargo/env"
