@@ -117,4 +117,13 @@ export LDLIBS="-lcs50"
 
 # Include headers to compile Protobuf files
 export CXXFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib"
-. "$HOME/.cargo/env"
+
+# Initialize Rust's cargo
+[ -e "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+
+# Expose poerty bin (Python package manager)
+export PATH="$HOME/.local/bin:$PATH"
+
+# Expose Rye
+source "$HOME/.rye/env"

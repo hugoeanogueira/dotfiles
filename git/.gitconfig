@@ -13,12 +13,13 @@
 
 [push]
     default = simple
+    autoSetupRemote = true
 
 [alias]
     serve = daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
     st = status -sb
 
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
     # Reset and pull
     rp = !git reset HEAD --hard && git pull
@@ -141,6 +142,6 @@
     log = true
 
 [pull]
-	rebase = true
+    rebase = true
 [init]
-	defaultBranch = master
+    defaultBranch = master
