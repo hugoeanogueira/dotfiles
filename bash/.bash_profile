@@ -50,14 +50,14 @@ JDK_8="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/";
 JDK_11="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/";
 JDK_13="/Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home/";
 JDK_11_ARM="/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home/";
-JDK_19_ARM="/Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/";
-export JAVA_HOME="$JDK_19_ARM";
+JDK_21_ARM="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/";
+export JAVA_HOME="$JDK_21_ARM";
 
 alias jdk8="export JAVA_HOME=$JDK_8; java -version";
 alias jdk11="export JAVA_HOME=$JDK_11; java -version";
 alias jdk13="export JAVA_HOME=$JDK_13; java -version";
 alias jdk11_arm="export JAVA_HOME=$JDK_11_ARM; java -version";
-alias jdk19_arm="export JAVA_HOME=$JDK_19_ARM; java -version";
+alias jdk21_arm="export JAVA_HOME=$JDK_21_ARM; java -version";
 
 # expose openjdk@17 (arm) for compilers
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
@@ -127,3 +127,9 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Expose Rye
 source "$HOME/.rye/env"
+
+# Expose psql
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+
+# Expose idea shortcut
+export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
