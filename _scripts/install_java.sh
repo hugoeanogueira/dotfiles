@@ -11,6 +11,6 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd );
 
 echo "--- Java ---";
 
-brew install --cask temurin21;
+brew install --cask temurin@25;
 
 success "Done!";
